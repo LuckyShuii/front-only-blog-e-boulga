@@ -3,6 +3,7 @@ let socials = document.querySelectorAll(".socials_footer")
 // boucle qui attribue une redirection vers le lien adéquat en cliquant sur les logos de réseaux sociaux
 
 socials.forEach(social => {
+    social.style.cursor = "pointer"
     social.addEventListener("click", () => {
         switch (social.id) {
             case 'tiktok_logo':
