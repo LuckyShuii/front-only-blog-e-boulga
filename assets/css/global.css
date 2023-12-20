@@ -1,0 +1,9 @@
+* {
+    --main-color: #FFA458;
+    --color-hover: #793700;
+    --our-black: rgb(11, 11, 11);
+}
+
+body {
+    margin: 0;
+}
