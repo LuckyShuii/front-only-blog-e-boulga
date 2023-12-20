@@ -1,0 +1,39 @@
+header {
+    background-color: var(--main-color);
+    border-radius: 0 0 1rem 1rem;
+    margin: 0;
+    height: 8rem;
+    display: flex;
+    padding: 0 13rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo_header {
+    width: 12rem;
+}
+
+#list_nav_header {
+    font-weight: 600;
+    font-size: 1.25rem;
+    padding: 0;
+    width: 40rem;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+#list_nav_header a {
+    color: var(--our-black);
+    text-decoration: none;
+}
+
+#list_nav_header a:hover {
+    cursor: pointer;
+    color: var(--color-hover);
+    text-decoration: none;
+}
+
+#burger_icon {
+    display: none;
+}
