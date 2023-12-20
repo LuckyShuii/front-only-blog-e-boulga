@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+
     <title>Accueil</title>
 </head>
 
@@ -14,7 +16,7 @@
 
 <body>
     <main>
-
+    <?php require_once('home.php'); ?>
     </main>
     <script src="assets/js/header.js" defer></script>
     <script src="assets/js/footer.js" defer></script>

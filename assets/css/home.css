@@ -1,0 +1,9 @@
+.bigNews {
+    width: 710px;
+    height: 527px;
+    border-radius: 10px;
+    /* background-color: #f0f; */
+    background-image: url(../img/home_picture/montagne1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
