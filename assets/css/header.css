@@ -2,7 +2,7 @@ header {
     background-color: var(--main-color);
     border-radius: 0 0 1rem 1rem;
     margin: 0;
-    height: 8rem;
+    height: var(--header-height-desktop);
     display: flex;
     padding: 0 13rem;
     justify-content: space-between;
@@ -22,6 +22,7 @@ header {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 #list_nav_header a {
@@ -35,6 +36,126 @@ header {
     text-decoration: none;
 }
 
-#burger_icon {
+/*
+Gestion du menu burger !
+*/
+
+#burger_icon,
+#openned_burger_icon {
     display: none;
+}
+
+#burger_menue {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: fixed;
+    bottom: 0;
+    background-color: var(--main-color);
+    width: 100%;
+    height: calc(100vh - var(--header-height-desktop));
+    list-style-type: none;
+
+}
+
+#burger_menue a {
+    text-decoration: none;
+    color: var(--our-black);
+}
+
+#burger_menue li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6rem;
+    width: 100%;
+
+}
+
+#burger_menue li:hover {
+    cursor: pointer;
+}
+
+.burger_separation {
+    width: 14rem;
+    border: none;
+    height: 3px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.burger_separation_header {
+    width: 100%;
+    border: none;
+    height: 1px;
+    background-color: black;
+}
+
+/*
+Gestion des media querries
+*/
+
+@media screen and (max-width: 1400px) {
+    #list_nav_header {
+        width: 30rem;
+    }
+}
+
+@media screen and (max-width: 1090px) {
+    header {
+        padding: 2rem 0;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    #list_nav_header {
+        display: none;
+    }
+
+    #burger_icon {
+        display: block;
+        position: absolute;
+        right: 2rem;
+    }
+
+    #burger_icon img {
+        width: 2rem;
+    }
+
+
+}
+
+@media screen and (max-width: 450px) {
+
+    #logo_header {
+        width: 40%;
+    }
+}
+
+/**
+ * ----------------------------------------
+ * animation slide-left
+ * ----------------------------------------
+ */
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(50vh);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(0px)
+    }
+
+    100% {
+        transform: translateX(50vh)
+    }
 }
