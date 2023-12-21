@@ -25,7 +25,7 @@
         </figure>
         <article>
             <figure id="profil">
-                <img src="assets/img/Lucas.jpg" alt="Lucas Boillot">
+                <img src="assets/img/Lucas2.jpg" alt="Lucas Boillot">
             </figure>
             <img id="firstquote" src="assets/img/quote.svg" alt="quote">
             <aside>
@@ -43,7 +43,7 @@
         </figure>
         <article>
             <figure id="profil">
-                <img src="assets/img/Lucas.jpg" alt="Lucas Boillot">
+                <img src="assets/img/Lucas2.jpg" alt="Lucas Boillot">
             </figure>
             <img id="firstquote" src="assets/img/quote.svg" alt="quote">
             <aside>
@@ -61,7 +61,7 @@
         </figure>
         <article>
             <figure id="profil">
-                <img src="assets/img/Lucas.jpg" alt="Lucas Boillot">
+                <img src="assets/img/Lucas2.jpg" alt="Lucas Boillot">
             </figure>
             <img id="firstquote" src="assets/img/quote.svg" alt="quote">
             <aside>
