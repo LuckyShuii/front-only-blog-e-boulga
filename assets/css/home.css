@@ -1,0 +1,122 @@
+
+/* card article principale */
+a {
+    text-decoration: none;
+}
+
+.hotNews_block {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    margin-top:80px ; /* Enlever le margin-top pour la implantation finale */
+}
+
+.bigNews {
+    width: 710px;
+    height: 527px;
+    border-radius: 10px;
+}
+
+.card:hover .articleTeasing{
+    height: 210px;
+    bottom: 185px;
+    transition: ease-in-out 0.7s; 
+}
+
+.card:hover p{
+    transition: ease-in-out 0.7s;
+    opacity:1;
+    visibility: visible;
+}
+
+.big { 
+    width: 710px;
+    height: 527px;
+    transition: ease-in-out 1s;
+} 
+
+.articleTeasing {
+    height:50px;
+    color: #d9d9d9;
+    max-width: 710px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 26px;
+    gap:15px;
+    position: absolute;
+    background-color: rgb(136, 0, 68, .9);
+    bottom: 185px;
+    border-radius: 0px 0px 10px 10px;
+    transition: ease-in-out 0.7s; 
+}
+
+.articleTeasing h1 {
+    margin-top: 12px;
+    text-align: center;
+    transition: ease-in-out 0.7s;
+}
+
+.articleTeasing p {
+    visibility: hidden;
+    opacity: 0; 
+}
+
+.title_bigNews:hover :not(:last-child) {
+    transform: scale(1.1);
+    transition: ease-in-out 1s;
+}
+
+/* cards article principale et secondaire */
+
+.card1, .big, .card, .small {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+/* cards article secondaire */
+
+.middle_news {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* background-color: #f0f; */
+}
+
+.middle_news .card1 .img:hover {
+    transform: scale(1.1);
+    transition: ease-in-out 0.7s;
+}
+
+.card1 { 
+    width: 300px;
+    height: 179px;   
+    overflow: hidden;
+}
+
+.card1 h2 {
+    text-align: center;
+    padding-top:8px ;
+    height:80px;
+    width:100%;
+    font-size: 1rem;
+    margin-top: -40px;
+    color: #d9d9d9;
+    background-color: rgb(136, 0, 68, .9) ;
+    position: relative;
+    z-index: 1;
+}
+
+.small {
+    width: 300px;
+    height: 179px;
+}
+
+.small:hover {
+    transform: scale(1.1);
+    transition: ease-in-out 0.7s;
+}
+
