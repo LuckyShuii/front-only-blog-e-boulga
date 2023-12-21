@@ -71,6 +71,8 @@
             <a id="githubProfil" href="#"><img src="assets/img/github.svg" alt="Profil Github"> Mon espace Github</a>
         </article>
     </main>
+    <script src="assets/js/header.js" defer></script>
+    <script src="assets/js/footer.js" defer></script>
 </body>
 <?php require_once('footer.php'); ?>
 
