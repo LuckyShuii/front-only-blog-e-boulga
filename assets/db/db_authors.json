@@ -1,0 +1,34 @@
+{
+    "authors": [
+        {
+            "firstName": "Lucas",
+            "lastName": "BOILLOT",
+            "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum facilisis massa nec maximus. Ut convallis fringilla finibus. Praesent convallis placerat risus. Morbi luctus commodo magna rhoncus lobortis. Morbi dignissim id ante a imperdiet. ",
+            "fullDescription": "My full description",
+            "linkedin": "https://www.linkedin.com/in/lucas-boillot/",
+            "gitHub": "https://github.com/LuckyShuii?tab=repositories",
+            "website": "https://hackertyper.net",
+            "img": "lucas.jpg"
+        },
+        {
+            "firstName": "Richard",
+            "lastName": "DESNOUES",
+            "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum facilisis massa nec maximus. Ut convallis fringilla finibus. Praesent convallis placerat risus. Morbi luctus commodo magna rhoncus lobortis. Morbi dignissim id ante a imperdiet. ",
+            "fullDescription": "My full description",
+            "linkedin": "https://www.linkedin.com/in/lucas-boillot/",
+            "gitHub": "https://github.com/LuckyShuii?tab=repositories",
+            "website": "https://hackertyper.net",
+            "img": "mon img"
+        },
+        {
+            "firstName": "Quentin",
+            "lastName": "GUILLEMINEAU",
+            "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum facilisis massa nec maximus. Ut convallis fringilla finibus. Praesent convallis placerat risus. Morbi luctus commodo magna rhoncus lobortis. Morbi dignissim id ante a imperdiet. ",
+            "fullDescription": "My full description",
+            "linkedin": "https://www.linkedin.com/in/lucas-boillot/",
+            "gitHub": "https://github.com/LuckyShuii?tab=repositories",
+            "website": "https://hackertyper.net",
+            "img": "mon img"
+        }
+    ]
+}

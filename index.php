@@ -10,16 +10,14 @@
     <title>Accueil</title>
 </head>
 
-<?php require_once('header.php'); ?>
-
 <body>
+    <?php require_once('header.php'); ?>
     <main>
 
     </main>
-    <script src="assets/js/header.js" defer></script>
-    <script src="assets/js/footer.js" defer></script>
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/footer.js"></script>
+    <?php require_once('footer.php'); ?>
 </body>
-
-<?php require_once('footer.php'); ?>
 
 </html>
