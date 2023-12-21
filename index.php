@@ -19,9 +19,9 @@
     <main>
         <?php require_once('home.php'); ?>
     </main>
+    <?php require_once('footer.php'); ?>
     <script src="assets/js/header.js"></script>
     <script src="assets/js/footer.js"></script>
-    <?php require_once('footer.php'); ?>
 </body>
 
 </html>
