@@ -8,13 +8,16 @@
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/article.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
     <title>Accueil</title>
 </head>
 
 <body>
     <?php require_once('header.php'); ?>
     <main>
-        <p><a id="go_back" href="home.php">Revenir à l'accueil</a></p>
+        <p><a id="go_back" href="index.php">Revenir à l'accueil</a></p>
         <?php require_once('assets/db/article.php'); ?>
 
         <section class="body_text">

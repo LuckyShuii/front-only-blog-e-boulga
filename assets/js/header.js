@@ -12,14 +12,15 @@ let myMain = document.querySelector("main")
 window.onload = onload();
 
 /**
- * / Variable mediaquerry pour le menu burger
- */
-let myMedia = window.matchMedia("(min-width: 1090px)")
-
-/**
  * Fonction appelée au chargement de la page avec toutes les fonctionnalités et écouteurs d'évenements
  */
 function onload() {
+
+    /**
+     * / Variable mediaquerry pour le menu burger
+     */
+    let myMedia = window.matchMedia("(min-width: 1090px)")
+
     logoHeader.addEventListener("click", () => {
         window.location = "../index.php"
     })

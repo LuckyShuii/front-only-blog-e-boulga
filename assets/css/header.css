@@ -55,7 +55,7 @@ Gestion du menu burger !
     width: 100%;
     height: calc(100vh - var(--header-height-desktop));
     list-style-type: none;
-
+    z-index: 2;
 }
 
 #burger_menue a {
