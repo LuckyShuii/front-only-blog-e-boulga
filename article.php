@@ -17,7 +17,7 @@
 <body>
     <?php require_once('header.php'); ?>
     <main>
-        <p><a id="go_back" href="home.php">Revenir à l'accueil</a></p>
+        <p><a id="go_back" href="index.php">Revenir à l'accueil</a></p>
         <?php require_once('assets/db/article.php'); ?>
 
         <section class="body_text">

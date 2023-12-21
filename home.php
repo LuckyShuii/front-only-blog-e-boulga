@@ -1,6 +1,6 @@
 <section class=hotNews_block>
     <article class="card bigNews">
-        <a href="#">
+        <a href="article.php?article=les_flux_rss">
             <div class="title_bigNews title_news">
                 <img class="big" src="../assets/img/home_picture/montagne1.png" alt="image de l'article principal">
                 <div class="articleTeasing">
@@ -13,14 +13,14 @@
 
     <article class="card middle_news">
         <a href="#">
-        <div class="card1">
+            <div class="card1">
                 <img class="small" src="../assets/img/home_picture/montagne1.png" alt="image de l'article secondaire">
-                <h2>Lorem ipsum dolor sit amet.</h2>    
+                <h2>Lorem ipsum dolor sit amet.</h2>
             </div>
         </a>
-        
+
         <a href="#">
-        <div class="card1">
+            <div class="card1">
                 <img class="small" src="../assets/img/home_picture/montagne1.png" alt="image de l'article secondaire">
                 <h2>Lorem ipsum dolor sit amet.</h2>
             </div>
