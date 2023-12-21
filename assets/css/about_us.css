@@ -1,0 +1,137 @@
+#PageTitle {
+    color: #000;
+    text-align: justify;
+    font-family: Titillium Web;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    margin-top: 3.81rem;
+    margin-bottom: 4.13rem;
+}
+
+#PagePresentation {
+    color: #000;
+    text-align: justify;
+    font-family: Titillium Web;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 3.81rem;
+}
+
+#separation {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4.81rem;
+}
+
+article {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(3, auto);
+    margin-bottom: 6.63rem;
+    text-decoration: none;
+    color: #000;
+    text-align: justify;
+    font-family: Titillium Web;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+article #profil {
+    display: flex;
+    justify-content: center;
+    grid-column: 1/2;
+    grid-row: 1;
+    width: 18.75rem;
+    height: 18.75rem;
+    border-radius: 50%;
+}
+
+article #firstquote {
+    margin-right: 0.5rem;
+    grid-column: 2/3;
+}
+
+article #endquote {
+    display: flex;
+    grid-column: 4/5;
+    grid-row: 2/3;
+    flex-direction: row-reverse;
+}
+
+article aside {
+    grid-column: 3/5;
+    grid-row: 1/3;
+}
+
+article aside section span {
+    flex-direction: row-reverse;
+    display: flex;
+}
+
+article h2 {
+    color: #000;
+    text-align: center;
+    font-family: Titillium Web;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+article #website {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: inherit;
+    color: var(--our-black);
+}
+
+article #linkedinProfil {
+    grid-row: 3/4;
+    grid-column: 3/4;
+    display: flex;
+    justify-content: center;
+    text-decoration: inherit;
+    color: var(--our-black);
+    border-radius: 0.625rem;
+    background: var(--Orange, #FFA458);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 255px;
+    height: 53px;
+    flex-shrink: 0;
+    align-items: center;
+}
+
+article #githubProfil {
+    grid-row: 3/4;
+    grid-column: 4/5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: inherit;
+    color: var(--our-black);
+    width: 255px;
+    height: 53px;
+    border-radius: 0.625rem;
+    border: 1px solid var(--Orange, #FFA458);
+    background: rgba(255, 164, 88, 0.07);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+article a img {
+    margin-right: 1rem;
+}

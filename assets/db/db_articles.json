@@ -1,0 +1,40 @@
+{
+    "articles": {
+        "one": {
+            "title": "Article 1",
+            "titleHome": "",
+            "coverImg": "",
+            "descriptionHome": "",
+            "introduction": "",
+            "detail": "",
+            "description": "",
+            "shadowColor": "",
+            "releaseDate": "",
+            "author": ""
+        },
+        "les_flux_rss": {
+            "title": "Les flux RSS",
+            "titleHome": "",
+            "coverImg": "assets/img/articles/img_article_test.jpg",
+            "descriptionHome": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum facilisis massa nec maximus. Ut convallis fringilla finibus. Praesent convallis placerat risus. Morbi luctus commodo magna rhoncus lobortis. Morbi dignissim id ante a imperdiet. ",
+            "introduction": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum facilisis massa nec maximus. Ut convallis fringilla finibus. <br><br>Praesent convallis placerat risus. Morbi luctus commodo magna rhoncus lobortis. Morbi dignissim id ante a imperdiet. Nam elementum lorem quis sem euismod rutrum ac et lacus. Phasellus euismod lacinia ornare. aliquam.Ut consectetur urna quis condimentum elementum. Aenean consectetur nisl ut velit viverra semper. Praesent congue ornare lorem, non mollis est mollis non. Curabitur urna sapien, feugiat vel consequat eu, elementum non enim. Morbi vel mauris metus. Maecenas consectetur congue turpis eu gravida. Integer imperdiet tincidunt tortor. Pellentesque gravida lorem vel luctus convallis. Aliquam erat volutpat.",
+            "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum facilisis massa nec maximus. Ut convallis fringilla finibus. Praesent convallis placerat risus. Morbi luctus commodo magna rhoncus lobortis. Morbi dignissim id ante a imperdiet. Nam elementum lorem quis semam.Ut consectetur urna quis condimentum elementum. Aenean consectetur nisl ut velit viverra semper. Praesent congue ornare lorem, non mollis est mollis non. Curabitur urna sapien, feugiat vel consequat eu, elementum non enim. Morbi vel mauris metus. Maecenas consectetur congue turpis eu gravida. <br><br>Integer imperdiet tincidunt tortor. Pellentesque gravida lorem vel luctus convallis. Aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum facilisis massa nec maximus. Ut convallis fringilla finibus. Curabitur vitae finibus quam, placerat volutpat felis. Suspendisse porta sem turpis, ut dapibus mauris dignissim at. Praesent convallis placerat risus. Morbi luctus commodo magna rhoncus lobortis. Morbi dignissim id ante a imperdiet. Nam elementum lorem quis sem euismod rutrum ac et lacus. Phasellus euismod lacinia ornare. Nullam luctus faucibus nisi a aliquam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum facilisis massa nec maximus. Ut convallis fringilla finibus. <br><br>Curabitur vitae finibus quam, placerat volutpat felis. Suspendisse porta sem turpis, ut dapibus mauris dignissim at.Praesent convallis placerat risus. Morbi luctus commodo magna rhoncus lobortis. Morbi dignissim id ante a imperdiet. Nam elementum lorem quis sem euismod rutrum ac et lacus. Phasellus euismod lacinia ornare. Nullam luctus faucibus nisi a aliquam.",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum facilisis massa nec maximus. Ut convallis fringilla finibus. Praesent convallis placerat risus. Morbi luctus commodo magna rhoncus lobortis. Morbi dignissim id ante a imperdiet. ",
+            "shadowColor": "",
+            "releaseDate": "",
+            "author": "Lucas"
+        },
+        "3": {
+            "title": "Article 3",
+            "titleHome": "",
+            "coverImg": "",
+            "descriptionHome": "",
+            "introduction": "",
+            "detail": "",
+            "description": "",
+            "shadowColor": "",
+            "releaseDate": "",
+            "author": ""
+        }
+    }
+}
