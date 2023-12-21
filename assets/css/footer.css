@@ -8,6 +8,7 @@ footer {
     background-color: var(--main-color);
     font-weight: 600;
     font-size: 1.25rem;
+    height: var(--footer-height-desktop);
 }
 
 main {
@@ -48,12 +49,35 @@ footer a {
 
 #socials {
     display: flex;
+    flex-wrap: wrap;
 }
 
-#socials {
+#socials li {
     display: flex;
+    align-items: center;
+}
+
+#facebook_logo,
+#instagram_logo {
+    width: 2rem;
+}
+
+#tiktok_logo {
+    width: 1.7rem;
 }
 
 #facebook_logo {
     margin: 0 2rem;
+}
+
+@media screen and (max-width: 1050px) {
+    footer {
+        flex-direction: column;
+        padding: 2rem 0;
+        height: auto;
+    }
+
+    #legal_link {
+        margin: 3rem 0;
+    }
 }
