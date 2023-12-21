@@ -6,7 +6,11 @@ let burgerMenue = document.querySelector("#burger_menue")
 let burgerOpennedIcon = document.querySelector("#openned_burger_icon")
 let myMain = document.querySelector("main")
 
+
+// Variable mediaquerry pour le menu burger
 let myMedia = window.matchMedia("(min-width: 1090px)")
+
+// Fonction appelée au chargement de la page avec toutes les fonctionnalités et écouteurs d'évenements
 
 function onload() {
     logoHeader.addEventListener("click", () => {
@@ -31,6 +35,8 @@ function onload() {
     });
 }
 
+// Fonction qui permet de fermer le menu burger si il est ouvert et que la fenêtre s'agrandit
+
 function myMediaQuerry(myMedia) {
     if (myMedia.matches) {
         burgerOpennedIcon.style.display = "none"
@@ -42,6 +48,8 @@ function myMediaQuerry(myMedia) {
     }
 }
 
+// Fonction qui se déclenche à l'ouverture du menu burger
+
 function openingBurger() {
     burgerMenue.style.display = "flex"
     burgerClosedIcon.style.display = "none"
@@ -52,6 +60,8 @@ function openingBurger() {
     myMain.style.display = "none"
 }
 
+// Fonction qui se déclenche à la fermeture du menu burger
+
 function closingBurger() {
     myFooter.style.display = "flex"
     burgerClosedIcon.style.display = "block"
@@ -60,9 +70,10 @@ function closingBurger() {
     setTimeout(() => {
         burgerMenue.style.display = "none"
     }, 500);
-    myHeader.style.borderRadius = "0 0 1rem 1rem"
     myMain.style.display = "block"
 
 }
+
+// Appel de la fonction au chargement de la page
 
 onload()
