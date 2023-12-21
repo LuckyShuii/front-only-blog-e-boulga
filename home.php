@@ -1,12 +1,11 @@
-    <section class=hotNews_block>
-        <article class="card bigNews">
-            <a href="#">
-                <div class="title_bigNews title_news">
-                    <img class="big" src="../assets/img/home_picture/montagne1.png" alt="image de l'article principal">
-                    <div class="articleTeasing">
-                        <h1>Lorem ipsum dolor sit amet.</h1>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur laboriosam numquam ducimus iste reprehenderit illum deleniti sequi, vitae voluptates, molestiae facere eligendi fuga, ratione quia animi debitis saepe perspiciatis libero?</p>
-                    </div>
+<section class=hotNews_block>
+    <article class="card bigNews">
+        <a href="article.php?article=les_flux_rss">
+            <div class="title_bigNews title_news">
+                <img class="big" src="../assets/img/home_picture/montagne1.png" alt="image de l'article principal">
+                <div class="articleTeasing">
+                    <h1>Lorem ipsum dolor sit amet.</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur laboriosam numquam ducimus iste reprehenderit illum deleniti sequi, vitae voluptates, molestiae facere eligendi fuga, ratione quia animi debitis saepe perspiciatis libero?</p>
                 </div>
             </a>
         </article>
@@ -64,10 +63,10 @@
             <div class="little_article">
                 <h3>Lorem ipsum dolor sit amet.</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos consequatur exercitationem, autem pariatur expedita nesciunt. Nostrum dolorem sequi, amet pariatur soluta provident corporis, illo ea inventore natus quo velit vero nesciunt fugiat harum aliquid modi impedit autem veniam facere ipsam. Neque quaerat pariatur unde earum, libero impedit quo soluta architecto, perferendis a sed, quas fugit doloremque cupiditate facere modi officiis.
-
                 </p>
             </div>
         </article>
+
 
         <article class="article_block">
             <div class="card2">
