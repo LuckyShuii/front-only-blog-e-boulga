@@ -31,8 +31,6 @@
 
 article {
     display: grid;
-    /* grid-template-columns: repeat(3, 1fr); */
-    /* grid-template-columns: 1fr, 50px, 1fr, 1fr, 40px; */
     grid-template-columns: repeat(5, auto);
     grid-template-rows: repeat(3, auto);
     margin-bottom: 6.63rem;
@@ -44,85 +42,89 @@ article {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
 
-    #profil {
-        display: flex;
-        justify-content: center;
-        grid-column: 1/2;
-        grid-row: 1;
-        width: 18.75rem;
-        height: 18.75rem;
-        border-radius: 50%;
-    }
+article #profil {
+    display: flex;
+    justify-content: center;
+    grid-column: 1/2;
+    grid-row: 1;
+    width: 18.75rem;
+    height: 18.75rem;
+    border-radius: 50%;
+}
 
-    #firstquote {
-        margin-right: 0.5rem;
-        grid-column: 2/3;
-    }
+article #firstquote {
+    margin-right: 0.5rem;
+    grid-column: 2/3;
+}
 
-    #endquote {
-        display: flex;
-        grid-column: 4/5;
-        grid-row: 2/3;
-        flex-direction: row-reverse;
-    }
+article #endquote {
+    display: flex;
+    grid-column: 4/5;
+    grid-row: 2/3;
+    flex-direction: row-reverse;
+}
 
-    & aside {
-        grid-column: 3/5;
-        grid-row: 1/3;
-        /* margin-left: 3.81rem; */
-    }
+article aside {
+    grid-column: 3/5;
+    grid-row: 1/3;
+}
 
-    & h4 {
-        grid-row: 2/3;
-        display: flex;
-        justify-content: center;
-        margin-top: 1rem;
-    }
+article aside section span {
+    flex-direction: row-reverse;
+    display: flex;
+}
 
-    #website {
-        grid-row: 3/4;
-        grid-column: 1/2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: inherit;
-        color: var(--our-black);
-    }
+article h4 {
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
 
-    #linkedinProfil {
-        grid-row: 3/4;
-        grid-column: 3/4;
-        display: flex;
-        justify-content: center;
-        text-decoration: inherit;
-        color: var(--our-black);
-        border-radius: 0.625rem;
-        background: var(--Orange, #FFA458);
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-        width: 15.9375rem;
-        height: 3.3125rem;
-        flex-shrink: 0;
-        align-items: center;
-    }
+article #website {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: inherit;
+    color: var(--our-black);
+}
 
-    #githubProfil {
-        grid-row: 3/4;
-        grid-column: 4/5;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: inherit;
-        color: var(--our-black);
-        width: 15.9375rem;
-        height: 3.375rem;
-        border-radius: 0.625rem;
-        border: 1px solid var(--Orange, #FFA458);
-        background: rgba(255, 164, 88, 0.07);
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    }
+article #linkedinProfil {
+    grid-row: 3/4;
+    grid-column: 3/4;
+    display: flex;
+    justify-content: center;
+    text-decoration: inherit;
+    color: var(--our-black);
+    border-radius: 0.625rem;
+    background: var(--Orange, #FFA458);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 255px;
+    height: 53px;
+    flex-shrink: 0;
+    align-items: center;
+}
 
-    & a img {
-        margin-right: 1rem;
-    }
+article #githubProfil {
+    grid-row: 3/4;
+    grid-column: 4/5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: inherit;
+    color: var(--our-black);
+    width: 255px;
+    height: 53px;
+    border-radius: 0.625rem;
+    border: 1px solid var(--Orange, #FFA458);
+    background: rgba(255, 164, 88, 0.07);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+article a img {
+    margin-right: 1rem;
 }
