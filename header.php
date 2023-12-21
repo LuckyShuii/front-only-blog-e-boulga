@@ -2,9 +2,9 @@
     <img id="logo_header" src="assets/img/logo-black.svg" alt="logo du site Blog-e-Boulga">
 
     <ul id="list_nav_header">
-        <li><a href="#"><img src="assets/img/home.svg" alt="icône d'une maison" /> Accueil</a></li>
-        <li><a href="#"><img src="assets/img/buste.svg" alt="icône d'un buste d'homme" /> Qui sommes-nous ?</a></li>
-        <li><a href="#"><img src="assets/img/enveloppe.svg" alt="icône d'une enveloppe" /> Contactez-nous</a></li>
+        <li><a href="index.php"><img src="assets/img/home.svg" alt="icône d'une maison" /> Accueil</a></li>
+        <li><a href="about_us.php"><img src="assets/img/buste.svg" alt="icône d'un buste d'homme" /> Qui sommes-nous ?</a></li>
+        <li><a href="#contactez_nous.php"><img src="assets/img/enveloppe.svg" alt="icône d'une enveloppe" /> Contactez-nous</a></li>
     </ul>
 
     <section id="burger_icon">
@@ -15,10 +15,10 @@
 
 <ul id="burger_menue">
     <hr class="burger_separation_header">
-    <li><a href="#"><img src="assets/img/home.svg" alt="icône d'une maison" /> Accueil</a></li>
+    <li><a href="index.php"><img src="assets/img/home.svg" alt="icône d'une maison" /> Accueil</a></li>
     <hr class="burger_separation">
-    <li><a href="#"><img src="assets/img/buste.svg" alt="icône d'un buste d'homme" /> Qui sommes-nous ?</a></li>
+    <li><a href="about_us.php"><img src="assets/img/buste.svg" alt="icône d'un buste d'homme" /> Qui sommes-nous ?</a></li>
     <hr class="burger_separation">
-    <li><a href="#"><img src="assets/img/enveloppe.svg" alt="icône d'une enveloppe" /> Contactez-nous</a></li>
+    <li><a href="#contactez_nous.php"><img src="assets/img/enveloppe.svg" alt="icône d'une enveloppe" /> Contactez-nous</a></li>
     <hr class="burger_separation">
 </ul>
