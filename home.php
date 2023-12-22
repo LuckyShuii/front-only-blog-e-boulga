@@ -7,6 +7,7 @@
                     <h1>Lorem ipsum dolor sit amet.</h1>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur laboriosam numquam ducimus iste reprehenderit illum deleniti sequi, vitae voluptates, molestiae facere eligendi fuga, ratione quia animi debitis saepe perspiciatis libero?</p>
                 </div>
+            </div>
         </a>
     </article>
 
