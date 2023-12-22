@@ -1,36 +1,63 @@
 let logoHeader = document.querySelector("#logo_header")
 let myHeader = document.querySelector("header")
-let burgerClosedIcon = document.querySelector("#closed_burger_icon")
 let myFooter = document.querySelector("footer")
-let burgerMenue = document.querySelector("#burger_icon")
-let burgerOpennedIcon = document.querySelector("#openned_burger_icon")
 let myMain = document.querySelector("main")
+let burgerIcone = document.querySelector("#burger_icon")
+let burgerMenue = document.querySelector("#burger_menue")
+let root = document.querySelector("body");
 
 window.onload = onload();
 
 function onload() {
-
-    burgerMenue.addEventListener("click", () => {
-        burgerMenue.classList.toggle('opened');
-        burgerMenue.setAttribute('aria-expanded', burgerMenue.classList.contains('opened'))
-        console.warn(burgerMenue.classList[0])
-        switch (burgerMenue.classList[2]) {
-            case "undisplayed":
-                console.warn("undisplayed")
-                openingBurger()
-                break;
-            case "isFlexed":
-                console.warn("isFlexed")
-                closingBurger()
-                break;
-        }
+    burgerIcone.addEventListener("click", () => {
+        // Open or close the burger menue
+        showResponsiveMenu()
     })
 
+    mediaQueryChecker() // Check if the window size is changing
+}
+
+// Open or close the burger menue, called in onload()
+function showResponsiveMenu() {
+    if (!burgerIcone.classList.contains('opened')) {
+        openingBurger(burgerMenue, root) // Open the burger menue
+    } else {
+        closingBurger(burgerMenue, root) // Close the burger menue
+    }
+}
+
+// Open the burger menue, called in showResponsiveMenu()
+function openingBurger(burgerMenue, root) {
+    burgerMenue.classList.add("opened");
+    burgerIcone.classList.add("opened");
+    root.style.overflowY = "hidden";
+
+    burgerMenue.classList.add('easeInAnimation')
+    burgerMenue.classList.remove('easeOutAnimation')
+    burgerMenue.classList.add('isFlexed')
+    myMain.classList.add('undisplayed')
+    myFooter.classList.add('undisplayed')
+}
+
+// Close the burger menue, called in showResponsiveMenu()
+function closingBurger(burgerMenue, root) {
+    burgerMenue.classList.remove("opened");
+    burgerIcone.classList.remove("opened");
+    root.style.overflowY = "";
+    burgerMenue.classList.remove('easeInAnimation')
+    burgerMenue.classList.add('easeOutAnimation')
+    myMain.classList.remove('undisplayed')
+    myFooter.classList.remove('undisplayed')
+
+    // Wait for the animation to end before removing the flex
+    setTimeout(() => {
+        burgerMenue.classList.remove('isFlexed')
+    }, 500);
+}
+
+// Check if the window size is changing, called in onload()
+function mediaQueryChecker() {
     let myMedia = window.matchMedia("(min-width: 1090px)")
-
-    logoHeader.addEventListener("click", () => {
-        window.location = "../index.php"
-    })
 
     myMediaQuerry(myMedia)
 
@@ -39,33 +66,24 @@ function onload() {
     });
 }
 
+// Close the burger menue if the window size going into desktop size
 function myMediaQuerry(myMedia) {
     if (myMedia.matches) {
-        // burgerOpennedIcon.classList.add('undisplayed')
-        burgerMenue.classList.add('undisplayed')
-        myFooter.classList.toggle('isFlexed')
-        myMain.classList.toggle('asBlock')
-    } else {
-        burgerMenue.classList.remove('undisplayed')
+        instanCloseBurger()
     }
 }
 
-function openingBurger() {
-    burgerMenue.classList.toggle('isFlexed')
-    // burgerClosedIcon.classList.toggle('undisplayed')
-    burgerOpennedIcon.classList.toggle('asBlock')
-    burgerMenue.classList.toggle('easeOutAnimation')
-    myFooter.classList.toggle('undisplayed')
-    myMain.classList.toggle('undisplayed')
-}
-function closingBurger() {
-    myFooter.classList.toggle('isFlexed')
-    // burgerClosedIcon.classList.toggle('asBlock')
-    burgerOpennedIcon.classList.toggle('undisplayed')
-    burgerMenue.classList.toggle('easeOutAnimation')
-    setTimeout(() => {
-        burgerMenue.classList.toggle('undisplayed')
-    }, 500);
-    myMain.classList.toggle('asBlock')
+// Function called if the window size going into desktop size, closes burger menue
+function instanCloseBurger() {
+    console.warn("instanCloseBurger")
+    burgerMenue.classList.remove("opened");
+    burgerIcone.classList.remove("opened");
 
+    root.style.overflowY = "";
+
+    burgerMenue.classList.remove('easeInAnimation')
+    burgerMenue.classList.add('easeOutAnimation')
+    burgerMenue.classList.remove('isFlexed')
+    myMain.classList.remove('undisplayed')
+    myFooter.classList.remove('undisplayed')
 }

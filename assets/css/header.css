@@ -9,6 +9,13 @@ header {
     width: 100%;
 }
 
+#aHeaderLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12rem;
+}
+
 #logo_header {
     width: 12rem;
 }
@@ -46,14 +53,9 @@ header {
 /*
 Gestion du menu burger !
 */
-/* 
-#burger_icon,
-#openned_burger_icon {
-    display: none;
-} */
 
-#openned_burger_icon {
-    cursor: pointer;
+#burger_icon {
+    display: none;
 }
 
 #burger_menue {
@@ -122,7 +124,11 @@ Gestion du menu burger !
 }
 
 .easeOutAnimation {
-    animation: slide-left 0.5s ease-out both !important;
+    animation: slide-right 0.5s ease-out both !important;
+}
+
+.easeInAnimation {
+    animation: slide-left 0.5s ease-in both !important;
 }
 
 /*
@@ -153,17 +159,16 @@ Gestion des media querries
         right: 2rem;
     }
 
-    #burger_icon img {
-        width: 2rem;
-    }
-
-
 }
 
 @media screen and (max-width: 450px) {
 
+    #aHeaderLogo {
+        width: 65%;
+    }
+
     #logo_header {
-        width: 40%;
+        width: 70%;
     }
 }
 
@@ -199,12 +204,14 @@ Gestion des media querries
  * ----------------------------------------
  */
 
-.menu {
+.menuBurgerGlobal {
     background-color: transparent;
     border: none;
     cursor: pointer;
     display: flex;
     padding: 0;
+    position: absolute;
+    right: 1rem;
 }
 
 .line {
