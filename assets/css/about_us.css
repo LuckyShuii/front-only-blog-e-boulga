@@ -52,15 +52,20 @@ article {
     line-height: normal;
 }
 
-article #profil img {
+#profil {
     display: flex;
-    justify-content: center;
+    align-items: center;
     grid-column: 1/2;
     grid-row: 1;
+}
+
+article #profil img {
+
     max-width: 18.75rem;
     max-height: 18.75rem;
-    border-radius: 50%;
     width: 100%;
+    border-radius: 50%;
+
 }
 
 article #firstquote {
