@@ -32,7 +32,8 @@
             </p>
         </section>
         <section id="img_section">
-            <img id="article_img" src="<?php echo $coverImg ?>" alt="bruh" />
+            <img id="article_img" src="<?php echo $coverImg ?>" alt="<?php echo $altImg == "" ? "Image de l'article " . $title : $altImg; ?>
+            " />
         </section>
 
         <section class="body_text">

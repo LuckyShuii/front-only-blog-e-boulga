@@ -25,6 +25,7 @@ function onload() {
         window.location = "../index.php"
     })
 
+    logoHeader.style.cursor = "pointer"
     burgerClosedIcon.style.cursor = "pointer"
     burgerOpennedIcon.style.cursor = "pointer"
 
