@@ -20,8 +20,8 @@ declare(strict_types=1);
  */
 if (json_validate($json_articles) && json_validate($json_authors)) {
     /**
-     * @param authors = Stockage du tableau/index "authors" afin de le renvoyer dans la fonction pour itérer dedans
-     * @param articles = Stockage de toutes les informations composant l'article demandé
+     * @param array $authors = Stockage du tableau/index "authors" afin de le renvoyer dans la fonction pour itérer dedans
+     * @param array $articles = Stockage de toutes les informations composant l'article demandé
      */
     (array) $authors = $parsed_authors->authors;
     (array) $articles = $parsed_articles->articles->$index_article;
@@ -37,17 +37,18 @@ if (json_validate($json_articles) && json_validate($json_authors)) {
     (string) $shadowColor = $articles->shadowColor;
     (string) $releaseDate = $articles->releaseDate;
     (string) $author = $articles->author;
+    (string) $altImg = $articles->altImg;
 
     /**
      * Appel de la fonction findAuthor pour récupérer les informations de l'auteur de cet article précisément, les deux paramètres sont :
-     * @param = le tableau avec tous les auteurs
-     * et
-     * @param = le nom de l'auteur de cet article
+     * @param string $author Le nom de l'auteur.
+     * @param array $authors Le tableau contenant tous les auteurs.
+     * @return array Les informations de l'auteur.
      */
     findAuthor($author, $authors);
 
     /**
-     * Stockage dans des variables des informations contenues dans le tableau renvoyé par la fonction 'findAuthor()'
+     * Stockage dans des variables des informations contenues dans le tableau renvoyé par la fonction 'findAuthor()' afin de les afficher dans la page article
      */
     (string) $authorFirstName = $authorInformation['firstName'];
     (string) $authorLastName = $authorInformation['lastName'];
@@ -55,7 +56,7 @@ if (json_validate($json_articles) && json_validate($json_authors)) {
     (string) $authorShortDescription = $authorInformation['shortDescription'];
 } else {
     /**
-     * Erreur renvoyée si le contenu n'est pas du JSON
+     * Erreur renvoyée si le contenu n'est pas du JSON (fichier mal formé)
      */
     throw new Exception("Une erreur s'est produite : Le contenu récupéré n'est pas au format JSON !");
 }
@@ -63,6 +64,9 @@ if (json_validate($json_articles) && json_validate($json_authors)) {
 
 /**
  * Fonction permettant de stocker dans un tableau associatif global les informations nécessaires concernant l'auteur en fin de page
+ * @param string $authorName Le nom de l'auteur.
+ * @param array $authorsList Le tableau contenant tous les auteurs.
+ * @return array Les informations de l'auteur.
  */
 function findAuthor(string $authorName, array $authorsList): array
 {
@@ -70,6 +74,8 @@ function findAuthor(string $authorName, array $authorsList): array
 
     /**
      * Boucle qui met dans un tableau uniquement les informations concernant l'auteur de l'article demandé
+     * @param array $authorInformation Le tableau contenant les informations des auteurs.
+     * @param array $author Le tableau contenant les informations de l'auteur.
      */
     foreach ($authorsList as $author) {
         if ($author->firstName === $authorName) {
@@ -83,7 +89,7 @@ function findAuthor(string $authorName, array $authorsList): array
     };
 
     /**
-     * Renvoie du tableau associatif pour l'exploiter après l'appel de la fonction
+     * @return array Les informations de l'auteur.
      */
     return $authorInformation;
 }
