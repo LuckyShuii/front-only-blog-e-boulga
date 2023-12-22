@@ -15,11 +15,12 @@ a {
     width: 710px;
     height: 527px;
     border-radius: 10px;
+    position:relative
 }
 
 .card:hover .articleTeasing{
     height: 210px;
-    bottom: 185px;
+    bottom: 0px;
     transition: ease-in-out 0.7s; 
 }
 
@@ -45,7 +46,7 @@ a {
     gap:15px;
     position: absolute;
     background-color: rgb(136, 0, 68, .9);
-    bottom: 185px;
+    bottom: 0px; 
     border-radius: 0px 0px 10px 10px;
     transition: ease-in-out 0.7s; 
 }
