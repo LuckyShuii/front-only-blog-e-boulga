@@ -153,7 +153,6 @@ a {
     justify-content: center;
     padding-top: 88px;
     padding-bottom: 88px;
-
 }
 
 .card2,
@@ -161,6 +160,7 @@ a {
     width: 495px;
     height: 312px;
     border-radius: 10px;
+    transition: ease-in-out 0.7s;
 }
 
 .card2:hover,
@@ -175,13 +175,13 @@ a {
     min-height: 80vh;
     max-width: 1055px;
     gap: 109px;
-    /* background-color: #f0f; */
 }
 
 .little_article {
     font-size: 18px;
     font-weight: 400;
     max-height: 312px;
+    transition: ease-in-out 0.7s;
 }
 
 .article_block {
@@ -189,7 +189,6 @@ a {
     gap: 86px;
     overflow: hidden;
     border-radius: 10px;
-    /* background-color: blue; */
 }
 
 h3 {
@@ -207,8 +206,52 @@ h3 {
     border-radius: 15px;
 }
 
+.card2:hover {
+    rotate:Y 30deg;
+    transition: ease-in-out 0.7s;
+    /* transform:translateZ(200px) ; Effet marteau de piano(à enregistrer pour plus tard)*/
+}
+
+.medium:hover {
+    box-shadow: -0.7em 0.5em 0.5em -0.4em #00cc99;
+    
+}
+
+ .little_article:hover {
+    rotate:Y -15deg;
+    transition: ease-in-out 0.7s;
+}
+
 main {
     margin-bottom: 88px;
+}
+
+/* animation scroll artlicle*/
+
+/* To FIX prefers-reduced-motion deature */
+/* @media (prefers-recuced-motion: no-preference) {
+    .article_block {
+        scale: .8; opacity: 0;
+        animation: fade-in linear forwards;
+        animation-timeline: view();
+        animation-range:0px 400px;
+    }
+    
+    @keyframes fade-in {
+        from {scale: .8; opacity: 0;}
+        to {scale: 1; opacity: 1;}
+    }
+} */
+
+.article_block {
+    scale: .8; opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range:0px 400px;
+}
+
+@keyframes fade-in {
+    to {scale: 1; opacity: 1;}
 }
 
 /* MEDIA QUERY */
@@ -228,6 +271,10 @@ main {
     .article_block {
         width: 95%;
         gap: 30px;
+        scale: 1; opacity: 1;
+        animation: none ;
+        animation-timeline: none;
+        animation-range:none;
         /* background-color: blue; */
     }
 
