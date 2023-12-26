@@ -2,7 +2,7 @@
     <ul id="list_nav_footer">
         <li><a href="index.php"><img src="assets/img/home.svg" alt="icône d'une maison" /> Accueil</a></li>
         <li><a href="about_us.php"><img src="assets/img/buste.svg" alt="icône d'un buste d'homme" /> Qui sommes-nous ?</a></li>
-        <li><a href="#contactez_nous.php"><img src="assets/img/enveloppe.svg" alt="icône d'une enveloppe" /> Contactez-nous</a></li>
+        <li><a href="contact_us.php"><img src="assets/img/enveloppe.svg" alt="icône d'une enveloppe" /> Contactez-nous</a></li>
     </ul>
 
     <ul id="legal_link">

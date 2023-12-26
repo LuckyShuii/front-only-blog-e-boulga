@@ -1,0 +1,145 @@
+main {
+    margin: 0 13rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/*Right block desktop*/
+
+#informationSocietyBlock {
+    display: flex;
+    justify-content: center;
+    grid-column: 2;
+    margin-top: 7.81rem;
+    margin-bottom: 19.38rem;
+    max-width: 25.3125rem;
+    height: 42.4375rem;
+    border-radius: 0rem 0.625rem 0.625rem 0rem;
+    background: rgba(255, 164, 88, 0.07);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    align-items: center;
+    width: 100%;
+}
+
+img+section {
+    margin-top: 2.40rem;
+}
+
+#informationSociety {
+    text-align: center;
+    line-height: 2rem;
+}
+
+/*Left Block desktop*/
+
+#contactUsBlock {
+    padding: 0 2.75rem 0 2.75rem;
+    display: flex;
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 9.81rem;
+    margin-bottom: 19.38rem;
+    width: 100%;
+}
+
+.contactUsForm {
+    width: 100%;
+}
+
+#contactUsBlock p {
+    margin-bottom: 2.4rem;
+    text-decoration: underline;
+}
+
+label,
+input,
+textarea {
+    display: block;
+    width: 100%;
+}
+
+input,
+textarea {
+    margin-bottom: 1rem;
+    resize: none;
+}
+
+#validationCheck {
+    display: flex;
+}
+
+#validationCheck label {
+    color: #000;
+    text-align: justify;
+    font-family: Titillium Web;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#validation {
+    width: auto;
+    margin: 1rem;
+}
+
+#validationButton {
+    display: flex;
+    margin-top: 2.65rem;
+}
+
+#validationButton input {
+    display: flex;
+    width: 7.1875rem;
+    height: 2.03606rem;
+    border-radius: 0.625rem;
+    background: var(--Orange, #FFA458);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+}
+
+#validationButton input:hover {
+    cursor: pointer;
+}
+
+input {
+    border: none;
+    border-bottom: solid;
+}
+
+/*Mobile*/
+
+@media screen and (max-width:1000px) {
+    main {
+        margin: 0 13rem;
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    #informationSocietyBlock {
+        display: flex;
+        justify-content: center;
+        width: 20.625rem;
+        height: 32.625rem;
+        grid-column: 1;
+        grid-row: 1;
+        margin-top: 2.50rem;
+        margin-bottom: 2.25rem;
+    }
+
+    #contactUsBlock {
+        grid-column: 1;
+        grid-row: 2;
+        margin-top: 0;
+        margin-bottom: 1.45rem;
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    main {
+        margin: 0 1.9rem;
+    }
+}
