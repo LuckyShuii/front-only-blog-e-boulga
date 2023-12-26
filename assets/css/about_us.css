@@ -163,7 +163,7 @@ article a img {
         margin: 0 2rem;
     }
 
-    article #firstquote {
+    article .firstquote {
         display: none;
     }
 
