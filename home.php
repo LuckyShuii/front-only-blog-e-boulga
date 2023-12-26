@@ -27,7 +27,7 @@
         </article>
     </section>
 
-    <span class="separation"><img src="../assets/img/separation.svg" alt="Barre de séparation"></span>
+    <span class="separation_bar"><img class="separation" src="/assets/img/separation.svg" alt="Barre de séparation"></span>
 
     <section class="article_list">
         <article class="article_block">
@@ -46,7 +46,7 @@
 
         <article class="article_block">
             <div class="card2">
-                <img class="medium" src="../assets/img/home_picture/montagne1.png" alt="image de l'article secondaire">
+                <img class="medium" src="/assets/img/home_picture/montagne1.png" alt="image de l'article secondaire">
             </div>
             <div class="little_article">
                 <h3>Lorem ipsum dolor sit amet.</h3>
