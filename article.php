@@ -32,7 +32,8 @@
             </p>
         </section>
         <section id="img_section">
-            <img id="article_img" src="<?php echo $coverImg ?>" alt="bruh" />
+            <img id="article_img" src="<?php echo $coverImg ?>" alt="<?php echo $altImg === "" ? "Image de l'article " . $title : $altImg; ?>
+            " />
         </section>
 
         <section class="body_text">
@@ -47,7 +48,7 @@
             </p>
         </section>
 
-        <section id="author_section">
+        <a href="about_us.php" id="author_section">
             <aside id="left_author">
                 <img id="author_img" src="assets/img/authors/<?php echo $authorImg ?>" alt="Photo de l'auteur <?php echo $authorFirstName . " " . $authorLastName ?>" />
                 <h3 id="author_name"><?php echo $authorFirstName . " " . $authorLastName ?></h3>
@@ -56,7 +57,7 @@
                 <h3 id="author_title_desc">A propos de l'auteur :</h3>
                 <?php echo $authorShortDescription ?>
             </article>
-        </section>
+        </a>
     </main>
     <?php require_once('footer.php'); ?>
     <script src="assets/js/header.js"></script>

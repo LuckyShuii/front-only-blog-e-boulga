@@ -1,40 +1,63 @@
 let logoHeader = document.querySelector("#logo_header")
 let myHeader = document.querySelector("header")
-let burgerClosedIcon = document.querySelector("#closed_burger_icon")
 let myFooter = document.querySelector("footer")
-let burgerMenue = document.querySelector("#burger_menue")
-let burgerOpennedIcon = document.querySelector("#openned_burger_icon")
 let myMain = document.querySelector("main")
+let burgerIcone = document.querySelector("#burger_icon")
+let burgerMenue = document.querySelector("#burger_menue")
+let root = document.querySelector("body");
 
-/**
- * Appel de la fonction onload() qui vient charger les écouteurs d'évenements
- */
 window.onload = onload();
 
-/**
- * Fonction appelée au chargement de la page avec toutes les fonctionnalités et écouteurs d'évenements
- */
 function onload() {
+    burgerIcone.addEventListener("click", () => {
+        // Open or close the burger menue
+        showResponsiveMenu()
+    })
 
-    /**
-     * / Variable mediaquerry pour le menu burger
-     */
+    mediaQueryChecker() // Check if the window size is changing
+}
+
+// Open or close the burger menue, called in onload()
+function showResponsiveMenu() {
+    if (!burgerIcone.classList.contains('opened')) {
+        openingBurger(burgerMenue, root) // Open the burger menue
+    } else {
+        closingBurger(burgerMenue, root) // Close the burger menue
+    }
+}
+
+// Open the burger menue, called in showResponsiveMenu()
+function openingBurger(burgerMenue, root) {
+    burgerMenue.classList.add("opened");
+    burgerIcone.classList.add("opened");
+    root.style.overflowY = "hidden";
+
+    burgerMenue.classList.add('easeInAnimation')
+    burgerMenue.classList.remove('easeOutAnimation')
+    burgerMenue.classList.add('isFlexed')
+    myMain.classList.add('undisplayed')
+    myFooter.classList.add('undisplayed')
+}
+
+// Close the burger menue, called in showResponsiveMenu()
+function closingBurger(burgerMenue, root) {
+    burgerMenue.classList.remove("opened");
+    burgerIcone.classList.remove("opened");
+    root.style.overflowY = "";
+    burgerMenue.classList.remove('easeInAnimation')
+    burgerMenue.classList.add('easeOutAnimation')
+    myMain.classList.remove('undisplayed')
+    myFooter.classList.remove('undisplayed')
+
+    // Wait for the animation to end before removing the flex
+    setTimeout(() => {
+        burgerMenue.classList.remove('isFlexed')
+    }, 500);
+}
+
+// Check if the window size is changing, called in onload()
+function mediaQueryChecker() {
     let myMedia = window.matchMedia("(min-width: 1090px)")
-
-    logoHeader.addEventListener("click", () => {
-        window.location = "../index.php"
-    })
-
-    burgerClosedIcon.style.cursor = "pointer"
-    burgerOpennedIcon.style.cursor = "pointer"
-
-    burgerClosedIcon.addEventListener("click", () => {
-        openingBurger()
-    })
-
-    burgerOpennedIcon.addEventListener("click", () => {
-        closingBurger()
-    })
 
     myMediaQuerry(myMedia)
 
@@ -43,44 +66,24 @@ function onload() {
     });
 }
 
-/**
- * Fonction qui permet de fermer le menu burger si il est ouvert et que la fenêtre s'agrandit 
- */
+// Close the burger menue if the window size going into desktop size
 function myMediaQuerry(myMedia) {
     if (myMedia.matches) {
-        burgerOpennedIcon.style.display = "none"
-        burgerMenue.style.display = "none"
-        myFooter.style.display = "flex"
-        myMain.style.display = "block"
-    } else {
-        burgerClosedIcon.style.display = "flex"
+        instanCloseBurger()
     }
 }
 
-/**
- * Fonction qui se déclenche à l'ouverture du menu burger
- */
-function openingBurger() {
-    burgerMenue.style.display = "flex"
-    burgerClosedIcon.style.display = "none"
-    burgerOpennedIcon.style.display = "block"
-    burgerMenue.style.animation = "slide-left .5s ease-in both"
-    myFooter.style.display = "none"
-    myHeader.style.borderRadius = "0"
-    myMain.style.display = "none"
-}
+// Function called if the window size going into desktop size, closes burger menue
+function instanCloseBurger() {
+    console.warn("instanCloseBurger")
+    burgerMenue.classList.remove("opened");
+    burgerIcone.classList.remove("opened");
 
-/**
- * Fonction qui se déclenche à la fermeture du menu burger
- */
-function closingBurger() {
-    myFooter.style.display = "flex"
-    burgerClosedIcon.style.display = "block"
-    burgerOpennedIcon.style.display = "none"
-    burgerMenue.style.animation = "slide-right .5s ease-out both"
-    setTimeout(() => {
-        burgerMenue.style.display = "none"
-    }, 500);
-    myMain.style.display = "block"
+    root.style.overflowY = "";
 
+    burgerMenue.classList.remove('easeInAnimation')
+    burgerMenue.classList.add('easeOutAnimation')
+    burgerMenue.classList.remove('isFlexed')
+    myMain.classList.remove('undisplayed')
+    myFooter.classList.remove('undisplayed')
 }
