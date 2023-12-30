@@ -60,7 +60,7 @@
                     <label for="validation">Donec interdum facilisis massa nec maximus. Ut convallis fringilla finibus. Praesent convallis placerat risus. Morbi luctus commodo magna rhoncus lobortis.</label>
                 </div>
                 <div id="validationButton">
-                    <input type="submit" value="Envoyer">
+                    <button name="envoyer" type="submit" form="contactUsForm">Envoyer</button>
                 </div>
             </form>
         </div>
