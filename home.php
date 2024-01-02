@@ -28,7 +28,7 @@
     </article>
 </section>
 
-<span class="separation"><img src="../assets/img/separation.svg" alt="Barre de séparation"></span>
+    <span class="separation_bar"><img class="separation" src="/assets/img/separation.svg" alt="Barre de séparation"></span>
 
 <section class="article_list">
     <article class="article_block">
@@ -45,13 +45,13 @@
         </div>
     </article>
 
-    <article class="article_block">
-        <div class="card2">
-            <img class="medium" src="../assets/img/home_picture/montagne1.png" alt="image de l'article secondaire">
-        </div>
-        <div class="little_article">
-            <h3>Lorem ipsum dolor sit amet.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos consequatur exercitationem, autem pariatur expedita nesciunt. Nostrum dolorem sequi, amet pariatur soluta provident corporis, illo ea inventore natus quo velit vero nesciunt fugiat harum aliquid modi impedit autem veniam facere ipsam. Neque quaerat pariatur unde earum, libero impedit quo soluta architecto, perferendis a sed, quas fugit doloremque cupiditate facere modi officiis.
+        <article class="article_block">
+            <div class="card2">
+                <img class="medium" src="/assets/img/home_picture/montagne1.png" alt="image de l'article secondaire">
+            </div>
+            <div class="little_article">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos consequatur exercitationem, autem pariatur expedita nesciunt. Nostrum dolorem sequi, amet pariatur soluta provident corporis, illo ea inventore natus quo velit vero nesciunt fugiat harum aliquid modi impedit autem veniam facere ipsam. Neque quaerat pariatur unde earum, libero impedit quo soluta architecto, perferendis a sed, quas fugit doloremque cupiditate facere modi officiis.
 
             </p>
         </div>

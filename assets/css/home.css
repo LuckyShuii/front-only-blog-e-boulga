@@ -1,3 +1,10 @@
+/* effet hover à tester */
+/* .bigNews:hover {
+    transition-duration: .15s;
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(.4,0,.2,1); */
+
+
 
 /* card article principale */
 a {
@@ -8,47 +15,55 @@ a {
     display: flex;
     justify-content: center;
     gap: 45px;
-    margin-top:80px ; /* Enlever le margin-top pour la implantation */
+    margin-top: 80px;
+    /* Enlever le margin-top pour l' implantation */
+    /* background-color: chartreuse; */
 }
 
 .bigNews {
     width: 710px;
     height: 527px;
     border-radius: 10px;
-    position:relative
+    position: relative;
 }
 
-.card:hover .articleTeasing{
+.card:hover .articleTeasing {
     height: 210px;
     bottom: 0px;
-    transition: ease-in-out 0.7s; 
+    transition: ease-in-out 0.7s;
 }
 
-.card:hover p{
+.card:hover p {
     transition: ease-in-out 0.7s;
-    opacity:1;
+    opacity: 1;
     visibility: visible;
 }
 
-.big { 
+.big {
     width: 710px;
     height: 527px;
     transition: ease-in-out 1s;
-} 
+    
+      
+}
+/* To Fix */
+/* .big img {
+    width: clamp(154px, 100vw, 710px);
+} */
 
 .articleTeasing {
-    height:50px;
+    height: 50px;
     color: #d9d9d9;
     max-width: 710px;
     display: flex;
     flex-direction: column;
     padding: 0px 26px;
-    gap:15px;
+    gap: 15px;
     position: absolute;
     background-color: rgb(136, 0, 68, .9);
-    bottom: 0px; 
+    bottom: 0px;
     border-radius: 0px 0px 10px 10px;
-    transition: ease-in-out 0.7s; 
+    transition: ease-in-out 0.7s;
 }
 
 .articleTeasing h1 {
@@ -59,7 +74,7 @@ a {
 
 .articleTeasing p {
     visibility: hidden;
-    opacity: 0; 
+    opacity: 0;
 }
 
 .title_bigNews:hover :not(:last-child) {
@@ -69,9 +84,16 @@ a {
 
 /* cards article principale et secondaire */
 
-.card1, .big, .card, .small {
+.card1,
+.big,
+.card,
+.small {
     border-radius: 10px;
     overflow: hidden;
+}
+
+.small {
+    transition: ease-in-out 1s;
 }
 
 .card:hover {
@@ -87,26 +109,29 @@ a {
     /* background-color: #f0f; */
 }
 
-.middle_news .card1 .img:hover  {
+.middle_news .card1 .img:hover {
     transform: scale(1.1);
+}
+
+.medium {
     transition: ease-in-out 0.7s;
 }
 
-.card1 { 
+.card1 {
     width: 300px;
-    height: 179px;   
+    height: 179px;
     overflow: hidden;
 }
 
 .card1 h2 {
     text-align: center;
-    padding-top:8px ;
-    height:80px;
-    width:100%;
+    padding-top: 8px;
+    height: 80px;
+    width: 100%;
     font-size: 1rem;
     margin-top: -40px;
     color: #d9d9d9;
-    background-color: rgb(136, 0, 68, .9) ;
+    background-color: rgb(136, 0, 68, .9);
     position: relative;
     z-index: 1;
 }
@@ -123,20 +148,23 @@ a {
 
 /* middle_homepage */
 
-.separation {
+.separation_bar {
     display: flex;
     justify-content: center;
     padding-top: 88px;
     padding-bottom: 88px;
+
 }
 
-.card2, .card2 img {
+.card2,
+.card2 img {
     width: 495px;
     height: 312px;
-    border-radius: 10px; 
+    border-radius: 10px;
 }
 
-.card2:hover, .little_article:hover {
+.card2:hover,
+.little_article:hover {
     cursor: pointer;
 }
 
@@ -144,22 +172,24 @@ a {
     display: flex;
     flex-direction: column;
     margin: auto;
-    min-height:100vh;
-    width:1055px;
-    gap:109px;
+    min-height: 80vh;
+    max-width: 1055px;
+    gap: 109px;
+    /* background-color: #f0f; */
 }
 
 .little_article {
     font-size: 18px;
-    font-weight: 400;  
+    font-weight: 400;
+    max-height: 312px;
 }
 
-.article_block { 
-  display: flex ;
-  gap: 86px;
-  overflow: hidden;
-  border-radius: 10px;
-  /*background-color: #f0f;*/
+.article_block {
+    display: flex;
+    gap: 86px;
+    overflow: hidden;
+    border-radius: 10px;
+    /* background-color: blue; */
 }
 
 h3 {
@@ -183,9 +213,102 @@ main {
 
 /* MEDIA QUERY */
 
-/* @media all and (max-width: 1076px) {
-    .middle_news {
-        flex-direction: row;
+@media all and (max-width: 1076px) {
+
+    .hotNews_block {
+        flex-wrap: wrap;
     }
 
-} */
+    .middle_news {
+        width: 710px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .article_block {
+        width: 95%;
+        gap: 30px;
+        /* background-color: blue; */
+    }
+
+    .article_list {
+        align-items: center;
+        /* background-color: #f0f; */
+        max-width: none;
+    }
+}
+
+@media all and (max-width: 935px) {
+    .article_block {
+        gap:10px
+    }
+
+    .little_article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* Permet de couper un texte long dans une card en lui indiquant que l'on veut 4 ligne de texte avec 3 petits points à la fin  */
+    .little_article p {
+        -webkit-line-clamp: 4;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    
+    .card2,
+    .card2 img {
+        width: 224px;
+        height: 149px;
+        border-radius: 10px;
+    }
+}
+
+@media all and (max-width:768px) {
+    .middle_news {
+        height: 400px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .separation {
+        width: 60%;
+    }
+}
+
+@media all and (max-width: 605px) {
+    .little_article p {
+        display: none;
+    }
+
+    .separation {
+        width: 70%;
+    }
+
+    .article_list {
+        gap: 50px;
+    }
+}
+
+@media all and (max-width: 567px) {
+    .card2,
+    .card2 img {
+        width: 186px;
+        height: 124px;
+        border-radius: 10px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+}
+
+@media all and (max-width: 465px) {
+
+    h3 {
+        font-size: 15px;
+        line-height: normal;
+    }
+}
