@@ -63,13 +63,14 @@ Gestion du menu burger !
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
     background-color: var(--main-color);
     width: 100%;
     height: calc(100vh - var(--header-height-desktop));
     list-style-type: none;
     z-index: 2;
+    /* margin-top: var(--header-height-desktop); */
 }
 
 #burger_menue a {
