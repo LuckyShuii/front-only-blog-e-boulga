@@ -2,6 +2,8 @@ main {
     margin: 0 13rem;
 }
 
+/* Block Header */
+
 #pageTitle {
     color: --our-black;
     text-align: justify;
@@ -36,6 +38,8 @@ main {
 .smallSeparation {
     display: none;
 }
+
+/* Block Author */
 
 article {
     display: grid;
@@ -113,6 +117,16 @@ article h2 {
     display: flex;
 }
 
+.website a:hover {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    /* box-shadow: 0px 12px 12px 0px rgba(0, 0, 0, 0.25); */
+}
+
 .linkedinProfil {
     grid-row: 3/4;
     grid-column: 3/4;
@@ -129,6 +143,16 @@ article h2 {
     flex-shrink: 0;
     align-items: center;
     margin-right: 1rem;
+}
+
+.linkedinProfil:hover {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    /* box-shadow: 0px 12px 12px 0px rgba(0, 0, 0, 0.25); */
 }
 
 .githubProfil {
@@ -148,16 +172,28 @@ article h2 {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
+.githubProfil:hover {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    /* box-shadow: 0px 12px 12px 0px rgba(0, 0, 0, 0.25); */
+}
+
 article a img {
     margin-right: 1rem;
 }
+
+/* Mobile */
 
 @media screen and (max-width:1100px) {
     main {
         margin: 0 2rem;
     }
 
-    article #firstquote {
+    article .firstquote {
         display: none;
     }
 
@@ -225,5 +261,39 @@ article a img {
 
     .smallSeparation {
         display: flex;
+    }
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
     }
 }
