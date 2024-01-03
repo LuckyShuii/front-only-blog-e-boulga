@@ -19,7 +19,6 @@
 </header>
 
 <ul id="burger_menue">
-    <hr class="burger_separation_header">
     <li><a href="index.php"><img src="assets/img/home.svg" alt="icône d'une maison" /> Accueil</a></li>
     <hr class="burger_separation">
     <li><a href="about_us.php"><img src="assets/img/buste.svg" alt="icône d'un buste d'homme" /> Qui sommes-nous ?</a></li>
