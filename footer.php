@@ -11,8 +11,8 @@
     </ul>
 
     <ul id="socials">
-        <li><img class="socials_footer" id="instagram_logo" src="assets/img/instagram.svg" alt="logo instagram" /></li>
-        <li><img class="socials_footer" id="facebook_logo" src="assets/img/facebook.svg" alt="logo facebook" /></li>
-        <li><img class="socials_footer" id="tiktok_logo" src="assets/img/tiktok.svg" alt="logo tiktok" /></li>
+        <li><a href="https://www.instagram.com/"><img class="socials_footer" id="instagram_logo" src="assets/img/instagram.svg" alt="logo instagram" /></a></li>
+        <li><a href="https://www.facebook.com/"><img class="socials_footer" id="facebook_logo" src="assets/img/facebook.svg" alt="logo facebook" /></a></li>
+        <li><a href="https://www.tiktok.com/"><img class="socials_footer" id="tiktok_logo" src="assets/img/tiktok.svg" alt="logo tiktok" /></a></li>
     </ul>
 </footer>

@@ -19,15 +19,15 @@
 <body>
     <?php require_once('header.php'); ?>
     <main>
-        <p><a id="go_back" href="index.php"><img src="assets/img/back-arrow.svg" alt="icone d'une flèche vers l'arrière noire" /></a></p>
+        <a id="go_back" href="index.php"><img src="assets/img/back-arrow.svg" alt="icone d'une flèche vers l'arrière noire" /></a>
         <?php require_once('assets/db/article.php'); ?>
 
-        <section class="body_text">
+        <section class="content-width body_text">
             <h1 id="article_title">
                 <?php echo $title ?>
             </h1>
 
-            <p class="article_P">
+            <p class="content-width article_P">
                 <?php echo $description ?>
             </p>
         </section>
@@ -36,7 +36,7 @@
             " />
         </section>
 
-        <section class="body_text">
+        <section class="content-width body_text">
             <h2 class="body_title">Introduction</h2>
             <p class="article_P">
                 <?php echo $introduction ?>
@@ -48,7 +48,7 @@
             </p>
         </section>
 
-        <a href="about_us.php" id="author_section">
+        <a href="about_us.php" id="author_section" class="content-width">
             <aside id="left_author">
                 <img id="author_img" src="assets/img/authors/<?php echo $authorImg ?>" alt="Photo de l'auteur <?php echo $authorFirstName . " " . $authorLastName ?>" />
                 <h3 id="author_name"><?php echo $authorFirstName . " " . $authorLastName ?></h3>
