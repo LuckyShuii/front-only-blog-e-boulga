@@ -19,7 +19,7 @@
 <body>
     <?php require_once('header.php'); ?>
     <main>
-        <p><a id="go_back" href="index.php"><img src="assets/img/back-arrow.svg" alt="icone d'une flèche vers l'arrière noire" /></a></p>
+        <a id="go_back" href="index.php"><img src="assets/img/back-arrow.svg" alt="icone d'une flèche vers l'arrière noire" /></a>
         <?php require_once('assets/db/article.php'); ?>
 
         <section class="body_text">
