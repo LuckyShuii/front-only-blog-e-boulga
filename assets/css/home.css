@@ -189,6 +189,10 @@ a {
     gap: 86px;
     overflow: hidden;
     border-radius: 10px;
+    scale: .8; opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range:0px 1000px
 }
 
 h3 {
@@ -243,12 +247,12 @@ main {
     }
 } */
 
-.article_block {
+/* .article_block {
     scale: .8; opacity: 0;
     animation: fade-in linear forwards;
     animation-timeline: view();
-    animation-range:0px 400px;
-}
+    animation-range:0px 1000px
+} */
 
 @keyframes fade-in {
     to {scale: 1; opacity: 1;}
