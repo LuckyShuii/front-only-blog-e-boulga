@@ -19,67 +19,66 @@ require_once('header.php'); ?>
 
 <body>
     <main>
-        <h1 id="pageTitle">L’équipe Blog-e-Boulga</h1>
-        <p id="pagePresentation">
-            Bienvenue dans notre équipe de développement web, la diversité de nos parcours professionnels se conjugue pour créer une synergie dans la réalisation de notre projet commun : un blog dédié au développement web.<br>
-            Notre objectif commun est de faire de cet espace une ressource pour les passionnés de développement web, des débutants aux professionnels chevronnés. Nous croyons que notre collaboration et nos perspectives variées contribueront à faire de ce projet une référence dans l'univers du développement web.
-        </p>
-        <figure class="separationAbout">
-            <img class="longSeparation" src="assets/img/separation.svg" alt="separation">
-            <img class="smallSeparation" src="assets/img/small_separation.svg" alt="small separation">
-        </figure>
+        <div id="mainPage">
+            <h1 id="pageTitle">L’équipe Blog-e-Boulga</h1>
+            <p id="pagePresentation">
+                Bienvenue dans notre équipe de développement web, la diversité de nos parcours professionnels se conjugue pour créer une synergie dans la réalisation de notre projet commun : un blog dédié au développement web.<br>
+                Notre objectif commun est de faire de cet espace une ressource pour les passionnés de développement web, des débutants aux professionnels chevronnés. Nous croyons que notre collaboration et nos perspectives variées contribueront à faire de ce projet une référence dans l'univers du développement web.
+            </p>
+            <figure class="separationAbout">
+                <img class="longSeparation" src="assets/img/separation.svg" alt="separation">
+                <img class="smallSeparation" src="assets/img/small_separation.svg" alt="small separation">
+            </figure>
 
-        <?php
-        require_once('header.php');
-        /**
-         * Récupération du contenu des fichier json articles & authors (future database)
-         */
-        (array) $json_authors = file_get_contents("assets/db/db_authors.json");
-        (array) $parsed_authors = json_decode($json_authors);
-
-        /**
-         * Check if le contenu récupéré est bien du json, sinon renvoyer une erreur
-         */
-        if (json_validate($json_authors)) {
+            <?php
             /**
-             * @param array $authors = Stockage du tableau/index "authors" afin de le renvoyer dans la fonction pour itérer dedans
+             * Récupération du contenu des fichier json articles & authors (future database)
              */
-            (array) $authors = $parsed_authors->authors;
-            //var_dump($authors);
-            foreach ($authors as $author) {
-                echo '
+            (array) $json_authors = file_get_contents("assets/db/db_authors.json");
+            (array) $parsed_authors = json_decode($json_authors);
+
+            /**
+             * Check if le contenu récupéré est bien du json, sinon renvoyer une erreur
+             */
+            if (json_validate($json_authors)) {
+                /**
+                 * @param array $authors = Stockage du tableau/index "authors" afin de le renvoyer dans la fonction pour itérer dedans
+                 */
+                (array) $authors = $parsed_authors->authors;
+                foreach ($authors as $author) { ?>
                     <article>
-                    <div class="leftSide">
-                        <figure class="profil">
-                            <img src="assets/img/' . $author->img . '" alt="Lucas Boillot">
-                        </figure>
-                        <span class="authorName">
-                        <h2>' . $author->firstName . ' ' . $author->lastName . '</h2>
-                        </span>
-                        <div class="website">
-                            <a href=' . $author->website . '><img src="assets/img/myWebSite.svg" alt="Site web personnel"> Mon Site</a>
-                        </div>
+                        <div class="leftSide">
+                            <figure class="profil">
+                                <img src="assets/img/<?php echo $author->img ?>" alt="Lucas Boillot">
+                            </figure>
+                            <span class="authorName">
+                                <h2><?php echo $author->firstName . ' ' . $author->lastName ?></h2>
+                            </span>
+                            <div class="website">
+                                <a href=<?php echo $author->website ?>><img src="assets/img/myWebSite.svg" alt="Site web personnel"> Mon Site</a>
+                            </div>
                         </div>
                         <img class="firstquote" src="assets/img/quote.svg" alt="quote">
                         <aside>
                             <p>
-                                ' . $author->fullDescription . ' <span> <img src="assets/img/entypo_quote.svg" alt="endquote"> </span>
+                                <?php echo $author->fullDescription ?> <span> <img src="assets/img/entypo_quote.svg" alt="endquote"> </span>
                             </p>
                         </aside>
-                        <a class="linkedinProfil" href=' . $author->linkedin . '><img src="assets/img/linkedin.svg" alt="Profil Linkedin"> Mon profil Linkedin</a>
-                        <a class="githubProfil" href=' . $author->gitHub . '><img src="assets/img/github.svg" alt="Profil Github"> Mon espace Github</a>
+                        <a class="linkedinProfil" href=<?php echo $author->linkedin ?>><img src="assets/img/linkedin.svg" alt="Profil Linkedin"> Mon profil Linkedin</a>
+                        <a class="githubProfil" href=<?php echo $author->gitHub ?>><img src="assets/img/github.svg" alt="Profil Github"> Mon espace Github</a>
                     </article>
                     <figure class="separationAbout">
-                                <img class="smallSeparation" src="assets/img/small_separation.svg" alt="small separation">
-                            </figure>';
+                        <img class="smallSeparation" src="assets/img/small_separation.svg" alt="small separation">
+                    </figure>
+            <?php   }
+            } else {
+                /**
+                 * Erreur renvoyée si le contenu n'est pas du JSON (fichier mal formé)
+                 */
+                throw new Exception("Une erreur s'est produite : Le contenu récupéré n'est pas au format JSON !");
             }
-        } else {
-            /**
-             * Erreur renvoyée si le contenu n'est pas du JSON (fichier mal formé)
-             */
-            throw new Exception("Une erreur s'est produite : Le contenu récupéré n'est pas au format JSON !");
-        }
-        ?>
+            ?>
+        </div>
     </main>
 </body>
 <?php require_once('footer.php'); ?>

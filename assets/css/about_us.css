@@ -1,5 +1,11 @@
 main {
     margin: 0 13rem;
+    display: flex;
+    justify-content: center;
+}
+
+#mainPage {
+    max-width: 100rem;
 }
 
 /* Block Header */
@@ -43,7 +49,7 @@ main {
 
 article {
     display: grid;
-    grid-template-columns: 1fr 50px 1fr 1fr;
+    grid-template-columns: 300px 50px 1fr 1fr;
     grid-template-rows: 1fr 50px 50px;
     margin-bottom: 6.63rem;
     text-decoration: none;
