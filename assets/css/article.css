@@ -7,6 +7,11 @@ main {
     text-align: justify;
 }
 
+.content-width {
+    width: 100%;
+    max-width: 100rem;
+}
+
 /**
 * Gestion du bouton de retour
 */
