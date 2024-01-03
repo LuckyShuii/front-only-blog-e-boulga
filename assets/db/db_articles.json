@@ -1,6 +1,7 @@
 {
     "articles": {
         "les_flux_rss": {
+            "parameter_url": "les_flux_rss",
             "title": "L'Essentiel sur les Flux RSS",
             "titleHome": "Découvrir les Flux RSS",
             "coverImg": "assets/img/articles/img_article_test.jpg",
@@ -14,6 +15,7 @@
             "author": "Lucas"
         },
         "serveurs_ftp_sftp": {
+            "parameter_url": "serveurs_ftp_sftp",
             "title": "Optimiser votre Flux de Travail Web avec les Serveurs FTP/SFTP",
             "titleHome": "Explorer les Serveurs FTP/SFT",
             "coverImg": "assets/img/articles/img_article_test.jpg",
@@ -27,6 +29,7 @@
             "author": "Lucas"
         },
         "les_api": {
+            "parameter_url": "les_api",
             "title": "Décoder les API",
             "titleHome": "Explorer le Monde des API",
             "coverImg": "assets/img/articles/img_article_test.jpg",
@@ -40,6 +43,7 @@
             "author": "Lucas"
         },
         "bdd_relationnelles": {
+            "parameter_url": "bdd_relationnelles",
             "title": "Les Fondamentaux des Bases de Données Relationnelles",
             "titleHome": "Les Bases de Données Relationnelles",
             "coverImg": "assets/img/articles/img_article_test.jpg",
@@ -53,6 +57,7 @@
             "author": "Lucas"
         },
         "veille_technologique": {
+            "parameter_url": "veille_technologique",
             "title": "Les Enjeux de la Veille Technologique",
             "titleHome": "La Veille Technologique",
             "coverImg": "assets/img/articles/img_article_test.jpg",
@@ -66,6 +71,7 @@
             "author": "Lucas"
         },
         "git_github": {
+            "parameter_url": "git_github",
             "title": "Découvrir Git & GitHub",
             "titleHome": "Explorer Git & GitHub",
             "coverImg": "assets/img/articles/img_article_test.jpg",
@@ -79,6 +85,7 @@
             "author": "Lucas"
         },
         "responsive_design": {
+            "parameter_url": "responsive_design",
             "title": "Maîtriser le Responsive Design",
             "titleHome": "Découvrir le Responsive Design",
             "coverImg": "assets/img/articles/img_article_test.jpg",
@@ -92,6 +99,7 @@
             "author": "Lucas"
         },
         "ui_ux": {
+            "parameter_url": "ui_ux",
             "title": "Maîtriser l'UI/UX Design",
             "titleHome": "Explorer l'UI/UX Design",
             "coverImg": "assets/img/articles/img_article_test.jpg",
@@ -105,6 +113,7 @@
             "author": "Lucas"
         },
         "linux_unix_windows": {
+            "parameter_url": "linux_unix_windows",
             "title": "Comprendre Linux, Unix et Windows",
             "titleHome": "Les Systèmes d'exploitations",
             "coverImg": "assets/img/articles/img_article_test.jpg",
@@ -118,6 +127,7 @@
             "author": "Lucas"
         },
         "php_article": {
+            "parameter_url": "php_article",
             "title": "Maîtriser PHP dans le Développement Web",
             "titleHome": "Explorer PHP",
             "coverImg": "assets/img/articles/img_article_test.jpg",
@@ -131,6 +141,7 @@
             "author": "Lucas"
         },
         "java_article": {
+            "parameter_url": "java_article",
             "title": "Découvrir Java dans le Monde de la Programmation",
             "titleHome": "Explorer Java",
             "coverImg": "assets/img/articles/img_article_test.jpg",
@@ -144,6 +155,7 @@
             "author": "Lucas"
         },
         "peer_programming_article": {
+            "parameter_url": "peer_programming_article",
             "title": "L'Art de la Programmation en Binôme",
             "titleHome": "Le Peer Programming",
             "coverImg": "assets/img/articles/img_article_test.jpg",
