@@ -56,12 +56,18 @@ article {
     line-height: normal;
 }
 
-.profil {
+.leftSide {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
     grid-column: 1/2;
     grid-row: 1;
+}
+
+.profil {
+    display: flex;
+    justify-content: center;
+    align-items: start;
 }
 
 article .profil img {
@@ -88,25 +94,32 @@ article aside p span {
     display: flex;
 }
 
-article h2 {
+.authorName {
+    display: flex;
+    /* grid-row: 1;
+    grid-column: 1; */
+    justify-content: center;
+    align-items: center;
+}
+
+.authorName h2 {
     color: --our-black;
-    text-align: center;
     font-family: Titillium Web;
     font-size: 1rem;
     font-style: normal;
+    text-align: center;
     font-weight: 700;
     line-height: normal;
-    grid-row: 2/3;
-    display: flex;
-    justify-content: center;
     margin-top: 1rem;
 }
 
 .website {
-    grid-row: 3/4;
-    grid-column: 1/2;
+    /* grid-row: 1;
+    grid-column: 1; */
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
+    align-items: end;
 }
 
 .website a {
