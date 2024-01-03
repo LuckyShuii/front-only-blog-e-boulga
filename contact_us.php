@@ -24,14 +24,14 @@
             <div id="rightSide">
                 <div id="informationSocietyBlock">
                     <section id="informationSociety">
-                        <p>Contactez-nous</p>
+                        <h1>Contactez-nous</h1>
                         <img src="/assets/img/blog-e-boulga-small-logo-black.svg" alt="small logo black">
-                        <section>
+                        <address>
                             <p>Blog-e-boulga Inc.</p>
                             <p>15 rue de la truffe <br />12345 Chat-City WORLD</p>
                             <p>Tel: 0123456789</p>
                             <p>Mail us: contact@blogeboulga.com</p>
-                        </section>
+                        </address>
                     </section>
                 </div>
             </div>

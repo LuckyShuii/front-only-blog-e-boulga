@@ -31,7 +31,6 @@ require_once('header.php'); ?>
             </figure>
 
             <?php
-            require_once('header.php');
             /**
              * Récupération du contenu des fichier json articles & authors (future database)
              */
@@ -46,34 +45,32 @@ require_once('header.php'); ?>
                  * @param array $authors = Stockage du tableau/index "authors" afin de le renvoyer dans la fonction pour itérer dedans
                  */
                 (array) $authors = $parsed_authors->authors;
-                //var_dump($authors);
-                foreach ($authors as $author) {
-                    echo '
+                foreach ($authors as $author) { ?>
                     <article>
-                    <div class="leftSide">
-                        <figure class="profil">
-                            <img src="assets/img/' . $author->img . '" alt="Lucas Boillot">
-                        </figure>
-                        <span class="authorName">
-                        <h2>' . $author->firstName . ' ' . $author->lastName . '</h2>
-                        </span>
-                        <div class="website">
-                            <a href=' . $author->website . '><img src="assets/img/myWebSite.svg" alt="Site web personnel"> Mon Site</a>
-                        </div>
+                        <div class="leftSide">
+                            <figure class="profil">
+                                <img src="assets/img/<?php echo $author->img ?>" alt="Lucas Boillot">
+                            </figure>
+                            <span class="authorName">
+                                <h2><?php echo $author->firstName . ' ' . $author->lastName ?></h2>
+                            </span>
+                            <div class="website">
+                                <a href=<?php echo $author->website ?>><img src="assets/img/myWebSite.svg" alt="Site web personnel"> Mon Site</a>
+                            </div>
                         </div>
                         <img class="firstquote" src="assets/img/quote.svg" alt="quote">
                         <aside>
                             <p>
-                                ' . $author->fullDescription . ' <span> <img src="assets/img/entypo_quote.svg" alt="endquote"> </span>
+                                <?php echo $author->fullDescription ?> <span> <img src="assets/img/entypo_quote.svg" alt="endquote"> </span>
                             </p>
                         </aside>
-                        <a class="linkedinProfil" href=' . $author->linkedin . '><img src="assets/img/linkedin.svg" alt="Profil Linkedin"> Mon profil Linkedin</a>
-                        <a class="githubProfil" href=' . $author->gitHub . '><img src="assets/img/github.svg" alt="Profil Github"> Mon espace Github</a>
+                        <a class="linkedinProfil" href=<?php echo $author->linkedin ?>><img src="assets/img/linkedin.svg" alt="Profil Linkedin"> Mon profil Linkedin</a>
+                        <a class="githubProfil" href=<?php echo $author->gitHub ?>><img src="assets/img/github.svg" alt="Profil Github"> Mon espace Github</a>
                     </article>
                     <figure class="separationAbout">
-                                <img class="smallSeparation" src="assets/img/small_separation.svg" alt="small separation">
-                            </figure>';
-                }
+                        <img class="smallSeparation" src="assets/img/small_separation.svg" alt="small separation">
+                    </figure>
+            <?php   }
             } else {
                 /**
                  * Erreur renvoyée si le contenu n'est pas du JSON (fichier mal formé)

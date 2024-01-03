@@ -4,6 +4,16 @@ main {
     justify-content: center;
 }
 
+h1 {
+    color: #000;
+    text-align: center;
+    font-family: Titillium Web;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 #mainPage {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -31,8 +41,9 @@ main {
     width: 100%;
 }
 
-img+section {
+img+address {
     margin-top: 2.40rem;
+    font-style: normal;
 }
 
 #informationSociety {
