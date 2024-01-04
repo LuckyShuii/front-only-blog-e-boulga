@@ -81,6 +81,7 @@ require_once('header.php'); ?>
         </div>
     </main>
 </body>
+<script src="assets/js/header.js" defer></script>
 <?php require_once('footer.php'); ?>
 
 </html>
