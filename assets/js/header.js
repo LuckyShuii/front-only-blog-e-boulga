@@ -75,7 +75,6 @@ function myMediaQuerry(myMedia) {
 
 // Function called if the window size going into desktop size, closes burger menue
 function instanCloseBurger() {
-    console.warn("instanCloseBurger")
     burgerMenue.classList.remove("opened");
     burgerIcone.classList.remove("opened");
 
