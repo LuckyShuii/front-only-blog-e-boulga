@@ -167,7 +167,7 @@ input {
 /*Mobile*/
 
 @media screen and (max-width:1000px) {
-    main {
+    #mainPage {
         margin: 0 13rem;
         display: grid;
         grid-template-rows: repeat(2, auto);
