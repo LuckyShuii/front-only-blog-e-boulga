@@ -13,12 +13,12 @@
         {
             "firstName": "Richard",
             "lastName": "DESNOUES",
-            "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum facilisis massa nec maximus. Ut convallis fringilla finibus. Praesent convallis placerat risus. Morbi luctus commodo magna rhoncus lobortis. Morbi dignissim id ante a imperdiet. ",
-            "fullDescription": "My full description",
-            "linkedin": "https://www.linkedin.com/in/lucas-boillot/",
-            "gitHub": "https://github.com/LuckyShuii?tab=repositories",
+            "shortDescription": "Tempora mori, tempora mundis recorda.",
+            "fullDescription": "Je suis un professionnel, doté d'une formation dans le domaine du développement. Fort d'une expérience de 10 ans au sein d'environnements dynamiques de start-up, j'ai occupé des postes tels que Scrum Master et Product Manager. Mon parcours professionnel m'a permis d'acquérir une expertise dans la gestion de projets, l'optimisation des processus et la livraison de produits.<br><br>Récemment, je me suis engagé dans une réorientation professionnelle axée sur le développement web. Mon objectif est d'élargir mes compétences techniques d'explorer de nouveaux horizons dans le monde du web et de contribuer de manière significative à des projets stimulants. Mon bagage en gestion de projets et en organisation combiné à ma volonté d'apprendre de nouvelles technologies font de moi un véritable professionnel adaptable et motivé, prêt à relever les défis du développement web. ",
+            "linkedin": "https://www.linkedin.com/in/richard-desnoues/",
+            "gitHub": "https://github.com/Richarddesnoues",
             "website": "https://hackertyper.net",
-            "img": "lucas.jpg"
+            "img": "ric.jpg"
         },
         {
             "firstName": "Quentin",
