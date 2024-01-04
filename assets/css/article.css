@@ -7,21 +7,31 @@ main {
     text-align: justify;
 }
 
+.content-width {
+    width: 100%;
+    max-width: 100rem;
+}
+
 /**
 * Gestion du bouton de retour
 */
 
 #go_back {
     position: absolute;
-    left: 2rem;
+    left: 4rem;
     top: 9rem;
     text-decoration: underline;
     color: var(--our-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #go_back:hover {
     cursor: pointer;
     color: var(--main-color);
+    background-color: rgb(205, 205, 205);
+    border-radius: 10px;
 }
 
 /**

@@ -1,8 +1,6 @@
 <?php require_once('./assets/db/articleList.php'); ?>
 <section class=hotNews_block>
     <?php foreach ($threeArticle as $art) : ?>
-
-
         <article class="card bigNews">
             <a href="article.php?article=<?= $art['parameter_url'] ?>">
                 <div class="title_bigNews title_news">
@@ -15,8 +13,6 @@
             </a>
         </article>
     <?php endforeach; ?>
-
-
     <article class="card middle_news">
         <?php foreach ($twoArticle as $artTwo) : ?>
             <a href="article.php?article=<?= $artTwo['parameter_url'] ?>">
