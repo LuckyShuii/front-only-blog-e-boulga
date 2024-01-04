@@ -1,6 +1,6 @@
 <?php require_once('./assets/db/articleList.php'); ?>
 <section class=hotNews_block>
-    <?php foreach ($threeArticle as $art) : ?>
+    <?php foreach ($oneArticle as $art) : ?>
         <article class="card bigNews">
             <a href="article.php?article=<?= $art['parameter_url'] ?>">
                 <div class="title_bigNews title_news">
@@ -17,7 +17,7 @@
         <?php foreach ($twoArticle as $artTwo) : ?>
             <a href="article.php?article=<?= $artTwo['parameter_url'] ?>">
                 <div class="card1">
-                    <img class="small" src="../assets/img/home_picture/montagne1.png" alt="image de l'article secondaire">
+                    <img class="small" src="<?= $artTwo['coverImg'] ?>" alt="image de l'article secondaire">
                     <h2><?= $artTwo['title'] ?></h2>
                 </div>
             </a>
@@ -34,7 +34,7 @@
                 <article class="article_block">
                     <div class="card_container">
                         <div class="card2">
-                            <img class="medium" src="../assets/img/home_picture/montagne1.png" alt="image de l'article secondaire">
+                            <img class="medium" src="<?= $articleInfo['coverImg'] ?>" alt="image de l'article secondaire">
                         </div>
                     </div>
                     <div class="little_article">
