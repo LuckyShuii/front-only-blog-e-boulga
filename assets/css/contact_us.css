@@ -14,6 +14,23 @@ h1 {
     line-height: normal;
 }
 
+.asterix {
+    color: red;
+}
+
+small {
+    margin-top: -1rem;
+    color: red;
+    font-size: 0.75rem;
+}
+
+#msg_sent {
+    display: none;
+    color: green;
+    text-decoration: none;
+    margin-top: 0.5rem;
+}
+
 #mainPage {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -69,7 +86,7 @@ img+address {
     width: 100%;
 }
 
-#contactUsBlock p {
+#header-form {
     margin-bottom: 2.4rem;
     text-decoration: underline;
 }
@@ -109,7 +126,7 @@ textarea {
 
 #validationButton {
     display: flex;
-    margin-top: 2.65rem;
+    margin-top: 1rem;
 }
 
 #validationButton button {
