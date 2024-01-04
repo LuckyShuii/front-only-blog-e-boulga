@@ -39,6 +39,17 @@ header {
     text-decoration: none;
 }
 
+#list_nav_header {
+    font-weight: 600;
+    font-size: 1.25rem;
+    padding: 0;
+    width: 40rem;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 /*
 Gestion du menu burger !
 */

@@ -66,7 +66,7 @@
                 </div>
                 <div id="validationCheck">
                     <input class="input_form" type="checkbox" name="validation" id="validation" />
-                    <label class="labelMod" for="validation">Donec interdum facilisis massa nec maximus. Ut convallis fringilla finibus. Praesent convallis placerat risus. Morbi luctus commodo magna rhoncus lobortis.<span class="asterix"> *</span></label>
+                    <label class="labelMod" for="validation">En cochant cette case, vous acceptez nos <a href="#">modalités et conditions</a> d'utilisation ainsi que notre <a href="#">politique de confidentitalité</a> pour la gestion des données fournies dans ce formulaire.<span class="asterix"> *</span></label>
                 </div>
                 <p id="msg_sent">Votre message a bien été envoyé !</p>
                 <div id="validationButton">
