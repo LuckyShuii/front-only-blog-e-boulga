@@ -70,7 +70,7 @@
                 </div>
                 <p id="msg_sent">Votre message a bien été envoyé !</p>
                 <div id="validationButton">
-                    <button name="envoyer" id="btn_submit" type="button">Envoyer</button>
+                    <button name="envoyer" id="btn_submit" type="submit">Envoyer</button>
                 </div>
 
             </form>
