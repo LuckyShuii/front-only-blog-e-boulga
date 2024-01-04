@@ -14,18 +14,18 @@ declare(strict_types=1);
 (array) $json_authors = file_get_contents("assets/db/db_authors.json");
 (array) $parsed_articles = json_decode($json_articles);
 (array) $parsed_authors = json_decode($json_authors);
-
+ 
 /**
  * Check if le contenu récupéré est bien du json, sinon renvoyer une erreur
  */
-if (json_validate($json_articles) && json_validate($json_authors)) {
+if    (json_validate($json_articles) && json_validate($json_authors)) {
     /**
      * @param array $authors = Stockage du tableau/index "authors" afin de le renvoyer dans la fonction pour itérer dedans
      * @param array $articles = Stockage de toutes les informations composant l'article demandé
      */
     (array) $authors = $parsed_authors->authors;
     (array) $articles = $parsed_articles->articles->$index_article;
-
+    
     /**
      * Stock dans des variables les différents composants de la page article
      */
