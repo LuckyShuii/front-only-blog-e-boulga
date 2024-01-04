@@ -1,6 +1,8 @@
 <?php
 
-$errors = [];
+declare(strict_types=1);
+
+(array) $errors = [];
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['envoyer'])) {
 
@@ -32,11 +34,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['envoyer'])) {
         /**
          * On sécurise les données reçues
          */
-        $prenom = secure_XSS_SQL($_POST['prenom']);
-        $nom = secure_XSS_SQL($_POST['nom']);
-        $mail = secure_XSS_SQL($_POST['mail']);
-        $subject = secure_XSS_SQL($_POST['subject']);
-        $message = secure_XSS_SQL($_POST['message']);
+        (string) $prenom = secure_XSS_SQL($_POST['prenom']);
+        (string) $nom = secure_XSS_SQL($_POST['nom']);
+        (string) $mail = secure_XSS_SQL($_POST['mail']);
+        (string) $subject = secure_XSS_SQL($_POST['subject']);
+        (string) $message = secure_XSS_SQL($_POST['message']);
 
         // TODO : ENVOYER UN MAIL V2 DU SITE
 
@@ -59,11 +61,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['envoyer'])) {
  * @param $data
  * @return string
  */
-function secure_XSS_SQL($data)
+function secure_XSS_SQL(string $data): string
 {
-    $data = trim($data); // Supprime les espaces (ou d'autres caractères) en début et fin de chaîne
-    $data = stripslashes($data); // Supprime les antislashs d'une chaîne
-    $data = strip_tags($data); // Supprime les balises HTML et PHP d'une chaîne
-    $data = htmlspecialchars($data); // Convertit les caractères spéciaux en entités HTML
+    (string) $data = trim($data); // Supprime les espaces (ou d'autres caractères) en début et fin de chaîne
+    (string) $data = stripslashes($data); // Supprime les antislashs d'une chaîne
+    (string) $data = strip_tags($data); // Supprime les balises HTML et PHP d'une chaîne
+    (string) $data = htmlspecialchars($data); // Convertit les caractères spéciaux en entités HTML
     return $data;
 }
