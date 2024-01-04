@@ -28,17 +28,6 @@ header {
     cursor: pointer;
 }
 
-#list_nav_header {
-    font-weight: 600;
-    font-size: 1.25rem;
-    padding: 0;
-    width: 40rem;
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
 #list_nav_header a {
     color: var(--our-black);
     text-decoration: none;
@@ -84,20 +73,19 @@ Gestion du menu burger !
     align-items: center;
     justify-content: center;
     height: 6rem;
-    width: 100%;
-
+    width: 14rem;
+    border-bottom: 1px solid black;
 }
 
 #burger_menue li:hover {
     cursor: pointer;
 }
 
-.burger_separation {
+.item-li {
     width: 14rem;
     border: none;
     height: 3px;
-    background-color: black;
-    border-radius: 10px;
+    border-bottom: 1px solid black;
 }
 
 .burger_separation_header {

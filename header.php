@@ -19,10 +19,7 @@
 </header>
 
 <ul id="burger_menue">
-    <li><a href="index.php"><img src="assets/img/home.svg" alt="icône d'une maison" /> Accueil</a></li>
-    <hr class="burger_separation">
-    <li><a href="about_us.php"><img src="assets/img/buste.svg" alt="icône d'un buste d'homme" /> Qui sommes-nous ?</a></li>
-    <hr class="burger_separation">
-    <li><a href="contact_us.php"><img src="assets/img/enveloppe.svg" alt="icône d'une enveloppe" /> Contactez-nous</a></li>
-    <hr class="burger_separation">
+    <li class="item-li"><a href="index.php"><img src="assets/img/home.svg" alt="icône d'une maison" /> Accueil</a></li>
+    <li class="item-li"><a href="about_us.php"><img src="assets/img/buste.svg" alt="icône d'un buste d'homme" /> Qui sommes-nous ?</a></li>
+    <li class="item-li"><a href="contact_us.php"><img src="assets/img/enveloppe.svg" alt="icône d'une enveloppe" /> Contactez-nous</a></li>
 </ul>
