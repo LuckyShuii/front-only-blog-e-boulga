@@ -61,7 +61,6 @@
     </main>
     <?php require_once('footer.php'); ?>
     <script src="assets/js/header.js"></script>
-    <script src="assets/js/footer.js"></script>
     <script src="assets/js/article.js"></script>
 </body>
 

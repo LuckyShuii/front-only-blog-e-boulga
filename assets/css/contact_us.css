@@ -14,6 +14,23 @@ h1 {
     line-height: normal;
 }
 
+.asterix {
+    color: red;
+}
+
+small {
+    margin-top: -1rem;
+    color: red;
+    font-size: 0.75rem;
+}
+
+#msg_sent {
+    display: none;
+    color: green;
+    text-decoration: none;
+    margin-top: 0.5rem;
+}
+
 #mainPage {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -69,7 +86,7 @@ img+address {
     width: 100%;
 }
 
-#contactUsBlock p {
+#header-form {
     margin-bottom: 2.4rem;
     text-decoration: underline;
 }
@@ -104,12 +121,16 @@ textarea {
 
 #validation {
     width: auto;
-    margin: 1rem;
+    margin: 1rem 1rem 1rem 0;
 }
 
 #validationButton {
     display: flex;
-    margin-top: 2.65rem;
+    margin-top: 1rem;
+}
+
+#validationButton:hover {
+    cursor: pointer;
 }
 
 #validationButton button {
@@ -130,6 +151,12 @@ textarea {
 
 #validationButton button:hover {
     cursor: pointer;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
 
 input {
@@ -173,5 +200,39 @@ input {
 @media screen and (max-width:500px) {
     main {
         margin: 0 1.9rem;
+    }
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
     }
 }
