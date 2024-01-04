@@ -18,7 +18,7 @@
             <a href="article.php?article=<?= $artTwo['parameter_url'] ?>">
                 <div class="card1">
                     <img class="small" src="<?= $artTwo['coverImg'] ?>" alt="image de l'article secondaire">
-                    <h2><?= $artTwo['title'] ?></h2>
+                    <h2><?= $artTwo['titleHome'] ?></h2>
                 </div>
             </a>
         <?php endforeach ?>

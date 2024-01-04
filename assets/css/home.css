@@ -330,7 +330,6 @@ main {
 @media all and (max-width: 605px) {
     .little_article h3 {
         width:165px;
-        /* background-color: #f0f;   */
     }
 
     .little_article p {
