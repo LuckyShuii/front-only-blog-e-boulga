@@ -1,82 +1,53 @@
+<?php require_once('./assets/db/articleList.php'); ?>
 <section class=hotNews_block>
-    <article class="card bigNews">
-        <a href="article.php?article=les_flux_rss">
-            <div class="title_bigNews title_news">
-                <img class="big" src="../assets/img/home_picture/montagne1.png" alt="image de l'article principal">
-                <div class="articleTeasing">
-                    <h1>Lorem ipsum dolor sit amet.</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur laboriosam numquam ducimus iste reprehenderit illum deleniti sequi, vitae voluptates, molestiae facere eligendi fuga, ratione quia animi debitis saepe perspiciatis libero?</p>
+    <?php foreach ($threeArticle as $art) : ?>
+
+
+        <article class="card bigNews">
+            <a href="article.php?article=<?= $art['parameter_url'] ?>">
+                <div class="title_bigNews title_news">
+                    <img class="big" src="<?= $art['coverImg'] ?>" alt="image de l'article principal">
+                    <div class="articleTeasing">
+                        <h1><?= $art['titleHome'] ?></h1>
+                        <p><?= $art['description'] ?></p>
+                    </div>
                 </div>
-            </div>
-        </a>
-    </article>
+            </a>
+        </article>
+    <?php endforeach; ?>
+
 
     <article class="card middle_news">
-        <a href="article.php?article=ui_ux">
-            <div class="card1">
-                <img class="small" src="../assets/img/home_picture/montagne1.png" alt="image de l'article secondaire">
-                <h2>Lorem ipsum dolor sit amet.</h2>
-            </div>
-        </a>
-
-        <a href="article.php?article=bdd_relationnelles">
-            <div class="card1">
-                <img class="small" src="../assets/img/home_picture/montagne1.png" alt="image de l'article secondaire">
-                <h2>Lorem ipsum dolor sit amet.</h2>
-            </div>
-        </a>
+        <?php foreach ($twoArticle as $artTwo) : ?>
+            <a href="article.php?article=<?= $artTwo['parameter_url'] ?>">
+                <div class="card1">
+                    <img class="small" src="../assets/img/home_picture/montagne1.png" alt="image de l'article secondaire">
+                    <h2><?= $artTwo['title'] ?></h2>
+                </div>
+            </a>
+        <?php endforeach ?>
     </article>
 </section>
 
-    <span class="separation_bar"><img class="separation" src="/assets/img/separation.svg" alt="Barre de séparation"></span>
+<span class="separation_bar"><img class="separation" src="/assets/img/separation.svg" alt="Barre de séparation"></span>
 
 <section class="article_list">
-    <article class="article_block">
-        <div class="card_container">
-            <div class="card2">
-                <img class="medium" src="../assets/img/home_picture/montagne1.png" alt="image de l'article secondaire">
-            </div>
-        </div>
-        <div class="little_article">
-            <h3>Lorem ipsum dolor sit amet.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos consequatur exercitationem, autem pariatur expedita nesciunt. Nostrum dolorem sequi, amet pariatur soluta provident corporis, illo ea inventore natus quo velit vero nesciunt fugiat harum aliquid modi impedit autem veniam facere ipsam. Neque quaerat pariatur unde earum, libero impedit quo soluta architecto, perferendis a sed, quas fugit doloremque cupiditate facere modi officiis.
-
-            </p>
-        </div>
-    </article>
-
-        <article class="article_block">
-            <div class="card2">
-                <img class="medium" src="/assets/img/home_picture/montagne1.png" alt="image de l'article secondaire">
-            </div>
-            <div class="little_article">
-                <h3>Lorem ipsum dolor sit amet.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos consequatur exercitationem, autem pariatur expedita nesciunt. Nostrum dolorem sequi, amet pariatur soluta provident corporis, illo ea inventore natus quo velit vero nesciunt fugiat harum aliquid modi impedit autem veniam facere ipsam. Neque quaerat pariatur unde earum, libero impedit quo soluta architecto, perferendis a sed, quas fugit doloremque cupiditate facere modi officiis.
-
-            </p>
-        </div>
-    </article>
-
-    <article class="article_block">
-        <div class="card2">
-            <img class="medium" src="../assets/img/home_picture/montagne1.png" alt="image de l'article secondaire">
-        </div>
-        <div class="little_article">
-            <h3>Lorem ipsum dolor sit amet.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos consequatur exercitationem, autem pariatur expedita nesciunt. Nostrum dolorem sequi, amet pariatur soluta provident corporis, illo ea inventore natus quo velit vero nesciunt fugiat harum aliquid modi impedit autem veniam facere ipsam. Neque quaerat pariatur unde earum, libero impedit quo soluta architecto, perferendis a sed, quas fugit doloremque cupiditate facere modi officiis.
-            </p>
-        </div>
-    </article>
-
-
-    <article class="article_block">
-        <div class="card2">
-            <img class="medium" src="../assets/img/home_picture/montagne1.png" alt="image de l'article secondaire">
-        </div>
-        <div class="little_article">
-            <h3>Lorem ipsum dolor sit amet.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos consequatur exercitationem, autem pariatur expedita nesciunt. Nostrum dolorem sequi, amet pariatur soluta provident corporis, illo ea inventore natus quo velit vero nesciunt fugiat harum aliquid modi impedit autem veniam facere ipsam. Neque quaerat pariatur unde earum, libero impedit quo soluta architecto, perferendis a sed, quas fugit doloremque cupiditate facere modi officiis.
-            </p>
-        </div>
-    </article>
+    <?php foreach ($parsed_articles as $article) : ?>
+        <?php foreach ($article as $articleInfo) : ?>
+            <a href="article.php?article=<?= $articleInfo['parameter_url'] ?>">
+                <article class="article_block">
+                    <div class="card_container">
+                        <div class="card2">
+                            <img class="medium" src="../assets/img/home_picture/montagne1.png" alt="image de l'article secondaire">
+                        </div>
+                    </div>
+                    <div class="little_article">
+                        <h3><?= $articleInfo['title'] ?></h3>
+                        <p><?= $articleInfo['description'] ?>
+                        </p>
+                    </div>
+                </article>
+            </a>
+        <?php endforeach; ?>
+    <?php endforeach; ?>
 </section>

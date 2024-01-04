@@ -33,8 +33,6 @@ a {
     width: 710px;
     height: 527px;
     transition: ease-in-out 1s;
-    
-      
 }
 
 .articleTeasing {
@@ -58,10 +56,16 @@ a {
     transition: ease-in-out 0.7s;
 }
 
+.article_list a {
+    text-decoration: none;
+    color: black;
+}
+
 .articleTeasing p {
     visibility: hidden;
     opacity: 0;
 }
+
 
 .title_bigNews:hover :not(:last-child) {
     transform: scale(1.1);
@@ -172,6 +176,14 @@ a {
     font-weight: 400;
     max-height: 312px;
     transition: ease-in-out 0.7s;
+    background-color: #f0f;
+}
+
+.little_article p {
+    -webkit-line-clamp: 8;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .article_block {
